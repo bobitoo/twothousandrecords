@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Wobbly';
+    src: url('Wobbly.woff2') format('woff2'),
+        url('Wobbly.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin:0;
+    padding:0%;
+}
+
+html {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.header {
+    width: 100%;
+    height:20%;
+    background-color: transparent;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+    display:block;
+    top:0%;
+    left:0%;
+    right:0%;
+    margin-bottom:0vh;
+    font-size: large;
+    font-family: 'Coolvetica Rg';
+    z-index: 99;
+    margin: 0 auto;
+}
+
+.universal {
+    height:40%;
+    position:absolute;
+    display: block;
+    top:30%;
+    right:2%;
+    z-index:100;
+    mix-blend-mode: difference;
+}
+
+.universal:hover {
+    fill:rgb(163, 163, 163);
+    transition-duration: 0.5s;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+
+
+.bounce {
+    font-family: 'Coolvetica Rg';
+    color:black;
+}
+.tab1 {
+    font-family: 'Wobbly';
+    color:rgb(255, 255, 255);
+    font-size: 2vw;
+    bottom:5%;
+    text-decoration: none;
+    transition-duration: 2s;
+    position: relative;
+    display: inline-flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    padding:0.5%;
+    border:none;
+    width:fit-content;
+    height:fit-content;
+    mix-blend-mode: difference;
+    margin-left:3%;
+    margin-top:3%;
+}
+.tab1:hover {
+    color:rgb(226, 226, 226);
+    background-color: transparent;
+    transition-duration: 0.5s;
+}
+
+.line {
+    width:100%;
+    height:0.5vh;
+    padding:0%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: block;
+    margin-top:10%;
+    z-index: 100;
+}
+
+.logo {
+    left:3%;
+    TOP:10%;
+    position:absolute;
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+    width:20%;
+    fill:rgb(255, 255, 255);
+    padding-top:1%;
+    mix-blend-mode: difference;
+    margin-left:2%;
+}
+
+.logo:hover {
+    fill:rgb(226, 226, 226);
+    transition-duration: 0.5s;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    min-height: 100%;
+  }
+
+.pic {
+    width:100%;
+    top:0%;
+    position: absolute;
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Wobbly';
+    src: url('Wobbly.woff2') format('woff2'),
+        url('Wobbly.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
