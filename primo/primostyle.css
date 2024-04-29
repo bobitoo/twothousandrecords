@@ -7,15 +7,12 @@
 
 }
 
-* {
-    box-sizing: border-box;
-}
+
 
 .header {
-    width: fit-content;
-    height:fit-content;
-    background-color: pink;
-    border: 2vw dotted aliceblue;
+    width:30%;
+    height:20%;
+    background-color: transparent;
     margin: 5% auto;
     text-align: center;
     justify-content: space-between;
@@ -26,34 +23,53 @@
     font-family: 'incredible_soupsregular';
     border-radius: 100%;
     top:20%;
+    z-index: 100;
 }
 
 .bounce {
     font-family: 'incredible_soupsregular';
     color:black;
 }
+
+#background {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    display: block;
+    margin:0 auto;
+    padding:0%;
+    z-index: 1;
+    left:0;
+    top:0;
+    bottom:0;
+}
+
+.primo {
+    fill: azure;
+}
 .tab {
     font-size: large;
     font-family: 'incredible_soupsregular';
-    color:whitesmoke;
+    color:rgb(255, 255, 255);
     font-size: 1vw;
     margin-top:5%;
     margin-left:5%;
     margin-right:5%;
+    margin-bottom:2%;
     text-decoration: none;
     transition-duration: 2s;
     position: relative;
     display: inline-flex;
     padding:1%;
-
+    z-index: 100;
 }
 .tab:hover {
-    color:rgb(104, 0, 97);
+    color:rgb(187, 187, 187);
     transition-duration: 0.5s;
     text-shadow: 25%;
     box-shadow: 25%;
     outline-style: solid;
-    outline-color: rgb(255, 255, 255);
+    outline-color: rgb(0, 0, 0);
 }
 
 .a {
@@ -61,12 +77,19 @@
     padding:5%;
 }
 
+
+@media screen and (max-width: 450px) {
+    #background {
+      width:100%;
+    }
+  }
+
+
+
 .alexia2 {
     width:80%;
-    height:80vh;
+    height:80%;
     background-color: transparent;
-    border:1vw dashed;
-    border-color: pink;
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 50% 50%;
@@ -75,6 +98,7 @@
     justify-content: center;
     margin:0 auto;
     margin-bottom: 2%;
+    z-index: 100;
 }
 
 .alexia3 {
@@ -90,19 +114,19 @@
     align-items:center;
     justify-content: center;
     margin:0 auto;
-
+    z-index: 100;
 }
 
 .image1 {
-    width:90%;
-    height:auto;
+    width: 30%;
     position:relative;
-    left:3%;
-    right:3%;
     display:flex;
     margin-right:0%;
-    justify-content: right;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
     text-align: end;
+    z-index: 100;
 
 }
 #image1 {
@@ -110,63 +134,34 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
-}
-#text1 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-#text2 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-#image2 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-#text3 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-#text4 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-h1 {
+    max-width: 80%;
     position:relative;
-    display: grid;
-    font-family: 'incredible_soupsregular';
+    display:flex;
+}
+
+
+.text1 {
+    position:relative;
+    display: flex;
     color:whitesmoke;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
     top:0vh;
     padding:3%;
     font-size: xxx-large;
     right:0%;
+    z-index: 100;
+    font-weight: 100;
 }
-h2 {
+.text2 {
     position:relative;
-    display: grid;
-    font-family: 'incredible_soupsregular';
-    color:whitesmoke;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    display: flex;
+    font-weight: 50;
+    color:rgb(0, 0, 0);
     top:0vh;
     padding:3%;
     top:15%;
     font-size: xx-large;
     right:0%;
+    z-index: 100;
 }
 
 h3 {
@@ -181,4 +176,5 @@ h3 {
     padding-bottom:3%;
     margin:0 auto;
     font-size: xx-large;
+    z-index: 100;
 }
