@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Stoner sport';
+    src: url('Stonersport-Regular.woff2') format('woff2'),
+        url('Stonersport-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

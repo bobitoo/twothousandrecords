@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'EctoBlaster';
+    src: url('EctoBlaster.woff2') format('woff2'),
+        url('EctoBlaster.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'evol';
+    src: url('Evol.woff2') format('woff2'),
+        url('Evol.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+body {
+    margin:0;
+    padding:0%;
+}
+
+html {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.header {
+    width: 100%;
+    height:15%;
+    background-color: transparent;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+    display:block;
+    bottom:0%;
+    left:0%;
+    right:0%;
+    margin-bottom:0vh;
+    font-size: large;
+    font-family: 'Coolvetica Rg';
+    z-index: 99;
+    margin: 0 auto;
+}
+
+.universal {
+    height:10%;
+    position:absolute;
+    display: block;
+    bottom:6%;
+    right:2%;
+    z-index:100;
+    mix-blend-mode: difference;
+}
+
+.universal:hover {
+    fill:white;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+
+
+.bounce {
+    font-family: 'Coolvetica Rg';
+    color:black;
+}
+.tab1 {
+    font-family: 'EctoBlaster';
+    color:rgb(255, 255, 255);
+    font-size: 3vw;
+    bottom:5%;
+    text-decoration: none;
+    transition-duration: 2s;
+    position: fixed;
+    display: block;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    padding:0.5%;
+    border:none;
+    width:fit-content;
+    height:fit-content;
+    mix-blend-mode: difference;
+    margin-left:3%;
+}
+.tab1:hover {
+    color:rgb(255, 255, 255);
+    background-color: transparent;
+    mix-blend-mode:difference;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.3vw;
+    transition-duration: 0.5s;
+}
+
+.tab2 {
+    font-family: 'EctoBlaster';
+    color:rgb(255, 255, 255);
+    font-size: 3vw;
+    bottom:5%;
+    text-decoration: none;
+    transition-duration: 2s;
+    position: fixed;
+    display: block;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    padding:0.5%;
+    border:none;
+    width:fit-content;
+    height:fit-content;
+    mix-blend-mode: difference;
+    margin-left:14%;
+
+}
+.tab2:hover {
+    color:rgb(255, 255, 255);
+    background-color: transparent;
+    mix-blend-mode:difference;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.3vw;
+    transition-duration: 0.5s;
+}
+
+.tab3 {
+    font-family: 'EctoBlaster';
+    color:rgb(255, 255, 255);
+    font-size: 3vw;
+    bottom:5%;
+    text-decoration: none;
+    transition-duration: 2s;
+    position: absolute;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding:0.5%;
+    border:none;
+    width:fit-content;
+    height:fit-content;
+    mix-blend-mode: difference;
+    margin-left:25%;
+
+
+}
+.tab3:hover {
+    color:rgb(255, 255, 255);
+    background-color: transparent;
+    mix-blend-mode:difference;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.3vw;
+    transition-duration: 0.5s;
+}
+.logo {
+    right:auto;
+    TOP:10%;
+    position: relative;
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+    width:95%;
+    fill:rgb(255, 255, 255);
+    padding-top:1%;
+    mix-blend-mode: difference;
+    margin-left:2%;
+}
+
+.logo:hover {
+    fill:rgb(119, 119, 119);
+    transition-duration: 0.5s;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    min-height: 100%;
+  }
+
+.a {
+    width:80%;
+    padding:5%;
+}
+
