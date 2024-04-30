@@ -97,8 +97,11 @@ html {
 
 
 .shirt {
-    position:relative;
+    position:absolute;
+    display: block;
     width:50%;
+    margin:0;
+    top:25%;
     cursor: pointer;
     z-index: 100;
 }
@@ -109,8 +112,11 @@ html {
 }
 
 .shirt2 {
-    position:relative;
+    position:absolute;
+    display:block;
     width:50%;
+    left:50%;
+    top:25%;
     cursor: pointer;
     z-index: 100;
 }
@@ -127,9 +133,10 @@ html {
 .hiddentext1 {
     font-family: 'Old English Text MT';
     color:white;
-    top:40%;
+    top:70%;
+    bottom:30%;
     position:absolute;
-    display: block;
+    display:flex; 
     z-index: 1;
     left:16%;
     opacity:1;
@@ -348,6 +355,16 @@ a:hover {
     transition-duration: 0.5s;
     cursor: pointer;
 }
+.primo2 {
+    fill: rgb(0, 0, 0);
+    top:0;
+}
+
+.primo2:hover {
+    opacity:0.6;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
 
 .tab {
     font-size: large;
@@ -443,7 +460,7 @@ a:hover {
     font-family: 'Old English Text MT';
     font-size: 5vw;
     width:125%;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     position:absolute;
     display: block;
     left:35%;
