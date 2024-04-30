@@ -100,6 +100,65 @@ html {
     position:relative;
     width:50%;
     cursor: pointer;
+    z-index: 100;
+}
+
+.shirt:hover {
+    opacity:0.6;
+
+}
+
+.shirt2 {
+    position:relative;
+    width:50%;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.shirt2:hover {
+    opacity:0.6;
+
+}
+.hiddentext1:hover {
+    opacity:1;
+
+}
+
+.hiddentext1 {
+    font-family: 'Old English Text MT';
+    color:white;
+    top:40%;
+    position:absolute;
+    display: block;
+    z-index: 1;
+    left:16%;
+    opacity:1;
+}
+
+.comingsoon {
+    width:30%;
+    height:10%;
+    position:absolute;
+    display:block;
+    background-color: transparent;
+    top:25%;
+    right:5%;
+    border-color: white;
+    border-style: solid;
+    border-width: .25vw;
+    font-family: 'Old English Text MT';
+    color:whitesmoke;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    padding:1%;
+    top:50%;
+}
+.comingsoon:hover{
+    background-color: rgb(0, 0, 114);
+    border-color: rgb(0, 2, 31);
+    transition-duration: 0.5s;
 }
 
 .text1{
@@ -204,7 +263,7 @@ html {
     display:block;
     padding:0%;
     margin:0%;
-    bottom:0%;
+    bottom:-50%;
     width:100%;
     left:2%;
     Right:2%;
@@ -371,77 +430,76 @@ a:hover {
     width: 30%;
     position:absolute;
     display:inline-flex;
-    margin-right:0%;
+    margin-right:30%;
     justify-content: right;
     align-items: center;
     margin:0 auto;
-    margin-left:20%;
     text-align: right;
     z-index: 100;
-
+    margin-left:10%;
 }
 
 .playing {
     font-family: 'Old English Text MT';
-    font-size: 6vw;
+    font-size: 5vw;
     width:125%;
-    color: white;
+    color: rgb(0, 0, 0);
     position:absolute;
     display: block;
-    left:55%;
+    left:35%;
     top:0%;
-    mix-blend-mode: exclusion;
 }
 .playing2 {
     font-family: 'Old English Text MT';
-    font-size: 2vw;
+    font-size: 3vw;
     color: white;
     position:absolute;
     display: block;
-    left:55%;
-    margin-top:10%;
-    mix-blend-mode: exclusion;
+    left:35%;
+    margin-top:12%;
 }
 .playing3 {
     font-family: 'Old English Text MT';
-    font-size: 1vw;
-    color: white;
+    font-size: 2vw;
+    color: rgb(255, 255, 255);
     position:absolute;
     display: block;
-    left:55%;
-    margin-top:20%;
-    mix-blend-mode: exclusion;
+    left:35%;
+    margin-top:22%;
 }
 .audio1 {
     width:20vw;
-    height:5vh;
+    height:2vh;
     position:relative;
-    display: flex;
+    display: block;
     left:100%;
-    top:0%;
+    top:23vh;
+    padding:3%;
 }
 .audio2 {
     width:20vw;
-    height:5vh;
-    position:relative;
-    display: flex;
+    height:2vh;
+    font-size: x-small;
+    position:absolute;
+    display:block;
+    top:400%;
     left:100%;
-    top:5%;
+    padding:3%;
 }
 .playing4 {
     font-family: 'Old English Text MT';
-    font-size: 1vw;
-    color: white;
+    font-size: 2vw;
+    color: rgb(255, 255, 255);
     position:absolute;
     display: block;
-    left:55%;
-    margin-top:23%;
-    mix-blend-mode: exclusion;
+    left:35%;
+    margin-top:25%;
 }
 .titles {
     position:relative;
     display: block;
     margin-left:25%;
+    top:50%;
     width:50%;
 }
 .image1:hover {
@@ -471,4 +529,14 @@ h3 {
     margin:0 auto;
     font-size: xx-large;
     z-index: 100;
+}
+
+.shop1 {
+    position: absolute;
+    display: block;
+    width: 100%;
+}
+
+.shop1:hover {
+    opacity:1;
 }
