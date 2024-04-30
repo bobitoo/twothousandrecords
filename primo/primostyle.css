@@ -1,19 +1,23 @@
 @font-face {
-    font-family: 'incredible_soupsregular';
-    src: url('incredible-soups-webfont.woff2') format('woff2'),
-         url('incredible-soups-webfont.woff') format('woff');
+    font-family: 'Old English Text MT';
+    src: url('OldEnglishTextMT.woff2') format('woff2'),
+        url('OldEnglishTextMT.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+    font-display: swap;
 }
 
 
+html {
+    padding:0%;
+    margin:0%;
+}
 
 .header {
-    width:30%;
+    width:20%;
     height:20%;
     background-color: transparent;
-    margin: 5% auto;
+    margin: 4% auto;
     text-align: center;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +26,7 @@
     font-size: large;
     font-family: 'incredible_soupsregular';
     border-radius: 100%;
-    top:20%;
+    top:5%;
     z-index: 100;
 }
 
@@ -32,30 +36,269 @@
 }
 
 #background {
-    min-width: 100%;
-    min-height: 100%;
-    position: absolute;
+    width: 100%;
+    position: relative;
     display: block;
-    margin:0 auto;
+    margin-top: 0%;
     padding:0%;
-    z-index: 1;
+    z-index: 0;
+    left:0;
+    top:0;
+    bottom:0;
+}
+#background3 {
+    width: 100%;
+    max-height:100vh;
+    position: relative;
+    display: flex;
+    margin-top: 0%;
+    padding:0%;
+    z-index: 0;
     left:0;
     top:0;
     bottom:0;
 }
 
+#background2 {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin:0 auto;
+    padding:0%;
+    z-index: 0;
+    left:0;
+    top:0;
+    bottom:0;
+    z-index: 0;
+}
+
+.backdiv {
+    position:absolute;
+    display: block;
+    width: 100%;
+    height:400%;
+    padding:0%;
+    margin:0%;
+    left:0%;
+    top:0%;
+}
+
+.backdiv2 {
+    position:absolute;
+    display: block;
+    width: 100%;
+    height:fit-content;
+    padding:0%;
+    margin:0%;
+    left:0%;
+    top:0%;
+    bottom:0%;
+}
+
+
+.shirt {
+    position:relative;
+    width:50%;
+    cursor: pointer;
+}
+
+.text1{
+    font-family: 'Old English Text MT';
+    font-size:6vw;
+    width: 35%;
+    left:20%;
+    position: absolute;
+    display: block;
+    color:white;
+    top:65%;
+}
+
+.text2{
+    font-family: 'Old English Text MT';
+    left:48%;
+    top:50%;
+    position: absolute;
+    display: block;
+    color: white;
+    fill: white;
+    font-size:8vw;
+}
+
+#myVideo {
+    width: 30%;
+    z-index: 100;
+    display: flex;
+    position: absolute;
+    top:60%;
+    left:15%;
+    mix-blend-mode: difference;
+  }
+
+  #myVideo1 {
+    width: 30%;
+    z-index: 100;
+    display: flex;
+    position: absolute;
+    top:65%;
+    left:20%;
+    mix-blend-mode: difference;
+  }
+
+
+  #myVideo2 {
+    width: 30%;
+    z-index: 100;
+    display: flex;
+    position: absolute;
+    top:70%;
+    left:25%;
+    mix-blend-mode: difference;
+  }
+  #myVideo3 {
+    width: 30%;
+    z-index: 100;
+    display: flex;
+    position: absolute;
+    top:40%;
+    right:15%;
+    mix-blend-mode: difference;
+  }
+
+  #myVideo4 {
+    width: 30%;
+    z-index: 100;
+    display: flex;
+    position: absolute;
+    top:45%;
+    right:20%;
+    mix-blend-mode: difference;
+  }
+
+
+  #myVideo5 {
+    width: 30%;
+    z-index: 100;
+    display: flex;
+    position: absolute;
+    top:50%;
+    right:25%;
+    mix-blend-mode: difference;
+  }
+
+
+
+.universal {
+    z-index: 100;
+    width:5%;
+    display:flex;
+    position: absolute;
+    top:15%;
+    left:5%;
+    mix-blend-mode: overlay;
+}
+.universal:hover {
+    mix-blend-mode: normal;
+}
+.linksbottom {
+    position:absolute;
+    display:block;
+    padding:0%;
+    margin:0%;
+    bottom:0%;
+    width:100%;
+    left:2%;
+    Right:2%;
+}
+.aclass {
+    z-index: 100;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1vw;
+    display: inline-flex;
+    position: relative;
+    margin-bottom:3%;
+    padding:3%;
+    mix-blend-mode: difference;
+    text-decoration: none;
+}
+
+.aclass1 {
+    z-index: 100;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1vw;
+    display: inline-flex;
+    position: relative;
+    margin-bottom:3%;
+    padding:3%;
+    mix-blend-mode: difference;
+    text-decoration: none;
+}
+
+.aclass2 {
+    z-index: 100;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1vw;
+    display: inline-flex;
+    position: relative;
+    margin-bottom:3%;
+    padding:3%;
+    mix-blend-mode: difference;
+    text-decoration: none;
+}
+
+.aclass3 {
+    z-index: 100;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1vw;
+    display: inline-flex;
+    position: relative;
+    margin-bottom:3%;
+    padding:3%;
+    mix-blend-mode: difference;
+    text-decoration: none;
+}
+
+.aclass4 {
+    z-index: 100;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1vw;
+    display: inline-flex;
+    position: relative;
+    margin-bottom:3%;
+    padding:3%;
+    mix-blend-mode: difference;
+    text-decoration: none;
+}
+a:hover {
+    mix-blend-mode: normal;
+    color: rgb(168, 168, 168);
+    transition-duration: 0.5s;
+}
+
 .primo {
     fill: azure;
+    top:0;
 }
+
+.primo:hover {
+    opacity:0.6;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
 .tab {
     font-size: large;
     font-family: 'incredible_soupsregular';
     color:rgb(255, 255, 255);
     font-size: 1vw;
-    margin-top:5%;
+    margin-top:0%;
     margin-left:5%;
     margin-right:5%;
-    margin-bottom:2%;
+    margin-bottom:5%;
     text-decoration: none;
     transition-duration: 2s;
     position: relative;
@@ -101,6 +344,13 @@
     z-index: 100;
 }
 
+@media screen and (min-width: 580px) {
+    #background{
+        max-height:100%;
+     }
+   
+  }
+
 .alexia3 {
     width:80%;
     height:80vh;
@@ -119,15 +369,84 @@
 
 .image1 {
     width: 30%;
-    position:relative;
-    display:flex;
+    position:absolute;
+    display:inline-flex;
     margin-right:0%;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     margin:0 auto;
-    text-align: end;
+    margin-left:20%;
+    text-align: right;
     z-index: 100;
 
+}
+
+.playing {
+    font-family: 'Old English Text MT';
+    font-size: 6vw;
+    width:125%;
+    color: white;
+    position:absolute;
+    display: block;
+    left:55%;
+    top:0%;
+    mix-blend-mode: exclusion;
+}
+.playing2 {
+    font-family: 'Old English Text MT';
+    font-size: 2vw;
+    color: white;
+    position:absolute;
+    display: block;
+    left:55%;
+    margin-top:10%;
+    mix-blend-mode: exclusion;
+}
+.playing3 {
+    font-family: 'Old English Text MT';
+    font-size: 1vw;
+    color: white;
+    position:absolute;
+    display: block;
+    left:55%;
+    margin-top:20%;
+    mix-blend-mode: exclusion;
+}
+.audio1 {
+    width:20vw;
+    height:5vh;
+    position:relative;
+    display: flex;
+    left:100%;
+    top:0%;
+}
+.audio2 {
+    width:20vw;
+    height:5vh;
+    position:relative;
+    display: flex;
+    left:100%;
+    top:5%;
+}
+.playing4 {
+    font-family: 'Old English Text MT';
+    font-size: 1vw;
+    color: white;
+    position:absolute;
+    display: block;
+    left:55%;
+    margin-top:23%;
+    mix-blend-mode: exclusion;
+}
+.titles {
+    position:relative;
+    display: block;
+    margin-left:25%;
+    width:50%;
+}
+.image1:hover {
+    opacity:0.6;
+    transition-duration: 0.5s;
 }
 #image1 {
     grid-column-start: 1;
@@ -137,31 +456,6 @@
     max-width: 80%;
     position:relative;
     display:flex;
-}
-
-
-.text1 {
-    position:relative;
-    display: flex;
-    color:whitesmoke;
-    top:0vh;
-    padding:3%;
-    font-size: xxx-large;
-    right:0%;
-    z-index: 100;
-    font-weight: 100;
-}
-.text2 {
-    position:relative;
-    display: flex;
-    font-weight: 50;
-    color:rgb(0, 0, 0);
-    top:0vh;
-    padding:3%;
-    top:15%;
-    font-size: xx-large;
-    right:0%;
-    z-index: 100;
 }
 
 h3 {
