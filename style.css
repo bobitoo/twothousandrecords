@@ -25,7 +25,7 @@ html {
   left:2vw;
   top:2vh;
   position: absolute;
-  z-index: 10;
+  z-index: 9;
   align-items: center;
   justify-content: center;
   margin-left: 0%;
@@ -54,7 +54,7 @@ html {
     width:70%;
     position: relative;
     margin: 100px 0;
-    z-index: 10;
+    z-index: 9;
     align-items: center;
     justify-content: center;
     border-radius: 15%;
@@ -100,6 +100,7 @@ html {
   align-items: center;
   justify-content: center;
   z-index: 1;
+  z-index: 10;
 }
 
 .action-btn {
@@ -110,15 +111,18 @@ html {
   cursor: pointer;
   padding: 20%;
   margin: 0;
+  z-index: 10;
 }
 
 .action-btn.action-btn-big {
   color: #000000;
   font-size: 3vh;
+  z-index: 10;
 }
 
 .action-btn:focus {
   outline: 0;
+  z-index: 10;
 }
 
 .music-info {
@@ -158,7 +162,7 @@ html {
 }
 
 .progress-container {
-  background: #fff;
+  background: rgba(199, 199, 199, 0.63);
   border-radius: 5px;
   cursor: pointer;
   margin: 10px 0;
@@ -167,7 +171,7 @@ html {
 }
 
 .progress {
-  background-color: #fe8daa;
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
   height: 100%;
   width: 0%;
@@ -194,9 +198,9 @@ html {
     justify-content: center;
     align-items:center;
     margin: 0;
-    position: sticky;
+    position: absolute;
     top: 0;
-    width: 100%;
+    width: 90%;
     height: 10%;
     background-color:transparent;
     z-index: 100;
@@ -210,7 +214,16 @@ html {
     min-width: 100%;
     top:0;
     z-index: 1;
+    max-width: 100%;
+    top:0;
+    bottom: 0;
+    z-index: 1;
+    padding:0;
+    margin:0;
   }
+
+
+
 
 
 .gif2gif {
@@ -256,13 +269,14 @@ html {
     text-align: right;
     justify-content:right;
     top:0;
-    z-index: 100;
+    z-index: 7;
+    right:5%;
     mix-blend-mode: difference;
 
 }
 .tab1 {
     text-align: right;
-    right:3%;
+    right:2%;
     padding:1%;
     margin:1%;
     background-color: transparent;
@@ -273,19 +287,21 @@ html {
     font-family: 'Times New Roman', Times, serif;
     transition-duration: 0.4s;
     -webkit-text-fill-color: #fff;
-    font-size: 2vw;
+    font-size: 1vw;
     height:fit-content;
     width:fit-content;
     display:inline-flex;
     position: relative;
+    mix-blend-mode: difference;
     z-index: 100;
     top:0;
 
 }
 .tab1:hover {
-    background-color: rgb(121, 121, 121);
-    color: rgb(255, 255, 255);
-    mix-blend-mode:normal;
+    background-color: white;
+    opacity: 2;
+    -webkit-text-fill-color: #000000;
+    transition-duration: 0.5s;
 }
 
 
@@ -322,7 +338,7 @@ a {
     color: #000000;
     height:5vh;
     width: 5vh;
-    mix-blend-mode:difference;
+    z-index: 100;
 }
 
 
@@ -369,7 +385,7 @@ a:active {
 
 /*START OF GLOBAL RESPONSIVE*/
 
-@media screen and (max-width: 440px) {
+    @media only screen and (max-width: 268px)  {
     .footer {
       width: 100%;
       top:0vh
@@ -424,7 +440,7 @@ a:active {
         height: fit-content;
         text-align: center;
         justify-content: space-between;
-        top:0vh;
+        top:0%;
         left:0%;
         right:0%;
         
@@ -554,7 +570,6 @@ a:active {
         width: 100%;
         padding: 1vh 1vw 1vh 1vw;
         opacity: 0;
-        transform: translateY(0%);
         z-index: 100;
         font-size: 2vh;
         transition:none;
@@ -563,7 +578,6 @@ a:active {
       
       .music-container.play .music-info {
         opacity: 1;
-        transform: translateY(100%);
         background-color: transparent;
       }
       
@@ -679,25 +693,25 @@ a:active {
     display: inline-flex;
     position: relative;
     z-index: 100;
-    height:80%;
-    right:30%;
-
+    height:50%;
+    width:30%;
+    max-height:50%;
+    max-width:35%;
+    right:5%;
 }
 
 .about1 {
     background-color: skyblue;
-    top:8vw;
-    left:7vh;
+    margin-top:35%;
+    margin-left:4%;
     position:relative;
-    display:block;
-    flex-wrap: wrap;
+    display:inline-flex;
     border-color: #000;
     border-radius: 5%;
-    width: 40vw;
-    height: 80vh;
+    width: 50%;
+    height: 50%;
     justify-content: center;
     align-items: center;
-    padding:10px;
     font-family: 'coolveticaregular';
     src: url('coolvetica.rg-regular-webfont.woff2') format('woff2'),
         url('coolvetica.rg-regular-webfont.woff') format('woff'),
@@ -707,88 +721,40 @@ a:active {
     font-style: normal;
     font-size:larger;
     transition-duration: 0.5s;
+    z-index: 100;
 }
 
 .about2 {
-    background-color: rgb(135, 235, 160);
-    left: 56vw;
-    top: 26vh;
-    position:relative;
-    display: block;
-    flex-wrap: wrap;
-    border-color: #000;
-    border-radius: 5%;
-    width: 40vw;
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
-    padding:10px;
-    font-family: 'coolveticaregular';
-    src: url('coolvetica.rg-regular-webfont.woff2') format('woff2'),
-        url('coolvetica.rg-regular-webfont.woff') format('woff'),
-        url('coolvetica.rg-regular-webfont.ttf') format('truetype'),
-        url('coolvetica.rg-regular-webfont.svg#coolveticaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-size:larger;
-    transition-duration: 0.5s;
-}
-.about3 {
     background-color: skyblue;
-    top:10vw;
-    left:7vh;
-    position:relative;
-    display: block;
-    flex-wrap: wrap;
-    border-color: #000;
-    border-radius: 5%;
-    width: 40vw;
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding:10vh;
-    font-family: 'coolveticaregular';
-    src: url('coolvetica.rg-regular-webfont.woff2') format('woff2'),
-        url('coolvetica.rg-regular-webfont.woff') format('woff'),
-        url('coolvetica.rg-regular-webfont.ttf') format('truetype'),
-        url('coolvetica.rg-regular-webfont.svg#coolveticaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-size:2vw;;
-    transition-duration: 0.5s;
-    bottom:50vh;
+z-index:100;
+top:5%;
+width:80%;
+    position:absolute;
+    display:inline-flex;
+
 }
 
-.about4 {
-    background-color: rgb(218, 218, 218);
-    top:0vh;
-    right:-55vw;
-    position:relative;
-    display: flex;
-    border-color: #000;
-    border-radius: 5%;
-    width: 40vw;
-    height: auto;
-    justify-content: center;
-    text-align:center;
-    padding:10vh;
+.about3 {
     font-family: 'coolveticaregular';
     src: url('coolvetica.rg-regular-webfont.woff2') format('woff2'),
         url('coolvetica.rg-regular-webfont.woff') format('woff'),
         url('coolvetica.rg-regular-webfont.ttf') format('truetype'),
         url('coolvetica.rg-regular-webfont.svg#coolveticaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-size:larger;
-    transition-duration: 0.5s;
-    flex-wrap: wrap;
+    z-index:100;
+    margin-top:25%;
+    width:90%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative ;
+    display:inline-flex;
+    color:white;
     mix-blend-mode: difference;
-    bottom:4vh;
 }
+
 
 .noexpectations {
-    width:100%;
+    width:80%;
     height:auto;
     padding:15vh;
     top:50vh;
@@ -803,16 +769,6 @@ a:active {
     top:50%;
 }
 
-.about1:hover {
-    background-color: rgb(110, 202, 238);
-    opacity: 0.8;
-}
-.about2:hover {
-    background-color: rgb(108, 244, 142);
-}
-.about3:hover {
-    background-color: rgb(110, 202, 238);
-}
 
 .back2 {
     width:80%;
@@ -840,12 +796,53 @@ a:active {
     font-size:larger;
 }
 .why {
-    right: 10vw;
-    width:80vw;
-    height:auto;
+    right: 10%;
+    width:50%;
+    height:50%;
     position: absolute;
+    display: inline-flex;
     transition-duration: 0.5s ;
+    bottom:1%;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    
 }
+svg {
+    z-index: 100;
+}
+g {
+    z-index: 100;
+}
+
+.top1 {
+    width:100%;
+    max-height: 128%;
+    position: absolute;
+    display: block;
+}
+.top2 {
+    width:100%;
+    min-height: 450%;
+    max-height: 600%;
+    position: absolute;
+    display: block;
+    bottom:0%;
+    top:0%;
+    margin-top:60%;
+}
+
+.imgback {
+    width:100%;
+    margin:0;
+    padding:0;
+    position: absolute;
+    display: block;
+    left:0;
+    top:0;
+    bottom:0;
+    z-index: -1;
+  }
 
 .why:hover {
     opacity: 0.8;
@@ -945,18 +942,20 @@ p {
     margin-top:2%;
     margin-left: 2%;
     margin-right: 2%;
-    override-colors: 0 black;
-    
+    z-index: 100;
+    fill:rgb(0, 0, 0);
 }
 
 .artists1:hover {
     animation: artists1 10s linear infinite;
     transition-duration:2s;
+    mix-blend-mode: exclusion;
+    fill:white;
 }
 
 @keyframes artists1 {
     0% {
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
     }
     5% {
         background-color: rgb(0, 0, 255);
@@ -1016,25 +1015,28 @@ p {
         background-color: rgb(0, 255, 21);
     }
     100% {
-        background-color: rgb(0, 0, 255);
+        background-color: rgb(255, 255, 255);
     }
 }
 
 .artists2 {
     position:relative;
-    margin-top:7%;
+    margin-top:9%;
     margin-left: 5%;
     margin-right: 20%;
     padding:2%;
-    
+    z-index: 100;
+    fill:#ffa6a3;
+    stroke: #000;
 }
 
 .artists2:hover {
     transition-duration: 1.5s;
-    override-colors: 0 rgb(255, 163, 163);
+    fill:#ffffff;
     background-color:rgb(255, 194, 194);
     padding:1%;
     cursor: pointer;
+    mix-blend-mode: difference;
 }
 
 .artists3 {
@@ -1043,7 +1045,9 @@ p {
     margin-left: 20%;
     margin-right: 5%;
     padding:2%;
-    
+    z-index: 100;
+    fill:#002fff;
+    stroke:#000000;
 }
 
 .artists3:hover {
@@ -1051,6 +1055,9 @@ p {
     transition-duration: 1.5s;
     background-color:blue;
     cursor: pointer;
+    mix-blend-mode: difference;
+    fill:#ffffff;
+
 }
 
 .artists4 {
@@ -1059,7 +1066,9 @@ p {
     margin-left: 5%;
     margin-right: 20%;
     padding:2%;
-    
+    z-index: 100;
+    fill:#00f000;
+    stroke:#000000;
 }
 
 .artists4:hover {
@@ -1067,6 +1076,8 @@ p {
     transition-duration: 1.5s;
     background-color:rgb(0, 255, 85);
     cursor: pointer;
+    mix-blend-mode: difference;
+    fill:#ffffff;
 }
 
 .artists5 {
@@ -1075,7 +1086,10 @@ p {
     margin-left: 20%;
     margin-right: 5%;
     padding:2%;
-    
+    z-index: 100;
+    fill:#b700ff;
+    stroke:#000000;
+    stroke-width: .17vw;
 }
 
 .artists5:hover {
@@ -1083,6 +1097,8 @@ p {
     transition-duration: 1.5s;
     background-color:rgb(241, 245, 36);
     cursor: pointer;
+    mix-blend-mode: difference;
+    fill:#ffffff
 }
 .artists6 {
     position:relative;
@@ -1090,14 +1106,19 @@ p {
     margin-left: 5%;
     margin-right: 20%;
     padding:2%;
-    
+    z-index: 100;
+    fill:#ff12df;
+    stroke:#000000;
+    stroke-width: .17vw;
 }
 
 .artists6:hover {
     padding:1%;
     transition-duration: 1.5s;
-    background-color:rgb(247, 0, 255);
+    background-color:rgb(255, 28, 160);
     cursor: pointer;
+    fill:#ffffff;
+    mix-blend-mode: difference;
 }
 
 .artists7 {
@@ -1106,7 +1127,10 @@ p {
     margin-left: 20%;
     margin-right: 5%;
     padding:2%;
-    
+    z-index: 100;
+    fill:#e90000;
+    stroke:#000000;
+    stroke-width: .17vw;
 }
 
 .artists7:hover {
@@ -1114,6 +1138,8 @@ p {
     transition-duration: 1.5s;
     background-color:rgb(180, 0, 0);
     cursor: pointer;
+    mix-blend-mode: difference;
+    fill:#ffffff;
 }
 
 .artists8 {
@@ -1122,7 +1148,10 @@ p {
     margin-left: 5%;
     margin-right: 20%;
     padding:2%;
-    
+    z-index: 100;
+    fill:#003881;
+    stroke:#000000;
+    stroke-width: .17vw;
 }
 
 .artists8:hover {
@@ -1130,6 +1159,124 @@ p {
     transition-duration: 1.5s;
     background-color:rgb(255, 102, 0);
     cursor: pointer;
+    mix-blend-mode: difference;
+    fill:white;
+}
+
+
+
+.linksbottom {
+    position:relative;
+    display:inline-flex;
+    padding:0%;
+    margin:0%;
+    margin-bottom:5%;
+    width:100%;
+    left:2%;
+    Right:2%;
+    top:2%;
+    z-index: 100;
+}
+.aclass {
+    z-index: 100;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1vw;
+    width:fit-content;
+    display: inline-flex;
+    position: relative;
+    margin-bottom:3%;
+    padding:3%;
+    mix-blend-mode: difference;
+    text-decoration: none;
+    font-family: 'coolveticaregular';
+}
+
+.aclass1 {
+    z-index: 100;
+    width:fit-content;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1vw;
+    display: inline-flex;
+    position: relative;
+    margin-bottom:3%;
+    padding:3%;
+    mix-blend-mode: difference;
+    text-decoration: none;
+    font-family: 'coolveticaregular';
+}
+
+.aclass2 {
+    z-index: 100;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1vw;
+    display: inline-flex;
+    position: relative;
+    margin-bottom:3%;
+    padding:3%;
+    mix-blend-mode: difference;
+    text-decoration: none;
+    font-family: 'coolveticaregular';
+    width:fit-content;
+}
+
+.aclass3 {
+    z-index: 100;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1vw;
+    display: inline-flex;
+    position: relative;
+    margin-bottom:3%;
+    padding:3%;
+    mix-blend-mode: difference;
+    text-decoration: none;
+    font-family: 'coolveticaregular';
+    width:fit-content;
+}
+
+.aclass4 {
+    z-index: 100;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1vw;
+    display: inline-flex;
+    position: relative;
+    margin-bottom:3%;
+    padding:3%;
+    mix-blend-mode: difference;
+    text-decoration: none;
+    font-family: 'coolveticaregular';
+    width:fit-content;
+}
+.aclass:hover {
+    mix-blend-mode: normal;
+    color: rgb(168, 168, 168);
+    transition-duration: 0.5s;
+}
+.aclass1:hover {
+    mix-blend-mode: normal;
+    color: rgb(168, 168, 168);
+    transition-duration: 0.5s;
+}
+.aclass2:hover {
+    mix-blend-mode: normal;
+    color: rgb(168, 168, 168);
+    transition-duration: 0.5s;
+}
+
+.aclass3:hover {
+    mix-blend-mode: normal;
+    color: rgb(168, 168, 168);
+    transition-duration: 0.5s;
+}
+
+.aclass4:hover {
+    mix-blend-mode: normal;
+    color: rgb(168, 168, 168);
+    transition-duration: 0.5s;
 }
 
 
@@ -1137,100 +1284,6 @@ p {
 
 @media screen and (max-width: 440px) {
 
-.about1 {
-    background-color: skyblue;
-    top:0vw;
-    left:7vh;
-    position:relative;
-    display: block;
-    flex-wrap: wrap;
-    border-color: #000;
-    border-radius: 5%;
-    width: 45%;
-    height: 35vh;
-    justify-content: center;
-    align-items: center;
-    padding:10px;
-    font-family: 'coolveticaregular';
-    src: url('coolvetica.rg-regular-webfont.woff2') format('woff2'),
-        url('coolvetica.rg-regular-webfont.woff') format('woff'),
-        url('coolvetica.rg-regular-webfont.ttf') format('truetype'),
-        url('coolvetica.rg-regular-webfont.svg#coolveticaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-size:larger;
-    transition-duration: 0.5s;
-}
-
-.about2 {
-    background-color: rgb(135, 235, 160);
-    left: 10vw;
-    right:0vw;
-    top: 15vh;
-    position:relative;
-    display: block;
-    flex-wrap: wrap;
-    border-color: #000;
-    width: 100vw;
-    height: 20vh;
-    transition-duration: 0.5s;
-}
-.about3 {
-    background-color: skyblue;
-    position:relative;
-    display: inline-flex;
-    border-color: #000;
-    width: 80vw;
-    height: 57vh;
-    font-size:6vw;
-    transition-duration: 0.5s;
-    padding:5% 5% 5% 5%;
-    left:7%;
-    mix-blend-mode: difference;
-}
-
-.about4 {
-    background-color: rgb(218, 218, 218);
-    top:8vh;
-    position:relative;
-    display: inline-flex;
-    border-color: #000;
-    border-radius: 5%;
-    width: 80%;
-    height: auto;
-    padding:5% 5% 5% 5%;
-    transition-duration: 0.5s;
-    mix-blend-mode: difference;
-    bottom:4vh;
-    left:10%;
-}
-
-.noexpectations {
-    width:100%;
-    height:20vh;
-    padding:5%;
-    top:45vh;
-}
-
-.nogif {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    position: relative ;
-    top:50%;
-}
-
-.about1:hover {
-    background-color: rgb(110, 202, 238);
-    opacity: 0.8;
-}
-.about2:hover {
-    background-color: rgb(108, 244, 142);
-}
-.about3:hover {
-    background-color: rgb(110, 202, 238);
-}
 
 .back2 {
     width:80%;
@@ -1257,42 +1310,7 @@ p {
     font-style: normal;
     font-size:larger;
 }
-.why {
-    left: 5%;
-    width:80%;
-    height:auto;
-    position: absolute;
-    transition-duration: 0.5s ;
-}
 
-.why:hover {
-    opacity: 0.8;
-}
-.aboutpicture1 {
-    position:relative;
-    display: inline-flex;
-    left:18.5vw;
-    top:10vh;
-    height:55vh;
-    width: auto;
-    transition-duration: 0.5s;
-}
-.aboutpicture1:hover {
-    opacity:0.8;
-}
-
-.aboutpicture2 {
-    position:relative;
-    display: inline-flex;
-    top:2vh;
-    height:20vh;
-    width: auto;
-    transition-duration: 0.5s;
-}
-
-.aboutpicture2:hover {
-    opacity:0.8;
-}
 
 .horizontal2 {
     height:20vh;
@@ -1314,30 +1332,7 @@ p {
     }
 }
 
-.welcome {
-    width:75%;
-    height:auto;
-    left: 10%;
-    position: absolute;
-    z-index: 1;
-    bottom:1px;
-    top:35%;
-    transition-duration: 0.5s;
-}
-.welcome:hover{
-    opacity: 0.8;
-}
 
-.aboutman {
-    display: inline-flex;
-    position: relative;
-    height: 20vh;
-    width: auto;
-    left: -30vw;
-    top:40vh;
-    bottom:0vh;
-    animation: aboutman 5s 5s linear infinite;
-}
 @keyframes aboutman {
     0% {
         transform: translateX(-20vw);
