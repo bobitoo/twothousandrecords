@@ -171,7 +171,7 @@ html {
     transition-duration: 0.5s;
 }
 .tab1home {
-    padding:0%;
+    padding:2%;
     margin:auto;
     margin-left:1%;
     margin-right:1%;
@@ -187,7 +187,7 @@ html {
     -webkit-text-fill-color: #fff;
     font-size: 4vw;
     text-align: center;
-    height:10%;
+    height:fit-content;
     width:fit-content;
     display:inline-flex;
     position: relative;
@@ -397,11 +397,11 @@ a:active {
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding:2%;
-        margin-top: 1vh;
-        margin-bottom: 1vh;
-        margin-left: 1vw;
-        margin-right: 1vw;
+        padding:0;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 1%;
+        margin-right: 1%;
       }
       
       .music-container2 {
@@ -434,16 +434,9 @@ a:active {
       }
       
       .music-container.play .img-container img {
-        animation-play-state: running;
+        animation-play-state: paused;
         border-style: solid;
         border-color: #000000;
-        position: relative;
-        z-index: 10;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin: 0%;
-        top:2vh;
       }
       
       
@@ -470,47 +463,15 @@ a:active {
         color: #000000;
         font-size: 2vw;
         z-index: 10;
+        margin: 0;
+        padding: 20%;
+        border: 0;
       }
       
       .action-btn:focus {
-        outline: 0;
         z-index: 10;
       }
       
-      .music-info {
-        background-color: transparent;
-        position:absolute;
-       display: inline-flex;
-        color:rgb(0, 0, 0);
-        top: 80%;
-        left:90%;
-        width: 80%;
-        padding: 1vh 1vw 1vh 1vw;
-        opacity: 0;
-        z-index: 0;
-        font-family: 'coolveticaregular';
-        src: url('coolvetica.rg-regular-webfont.woff2') format('woff2'),
-            url('coolvetica.rg-regular-webfont.woff') format('woff'),
-            url('coolvetica.rg-regular-webfont.ttf') format('truetype'),
-            url('coolvetica.rg-regular-webfont.svg#coolveticaregular') format('svg');
-        font-weight: normal;
-        font-style: normal;
-        font-size: 3vh;
-        text-align: left;
-        z-index: 100;
-        mix-blend-mode: difference;
-        transition: none;
-      }
-      
-      .music-container.play .music-info {
-        opacity: 1;
-        background-color: transparent;
-        transition: none;
-      }
-      
-      .music-info h4 {
-        margin: 1vh 1vw 1vh 1vw;
-      }
       
       .progress-container {
         background: rgba(199, 199, 199, 0.63);
@@ -605,13 +566,7 @@ a:active {
       }
       
       .music-container.play .img-container img {
-        animation-play-state: running;
-        top:0%;
-        position: relative;
-        left:0%;
-        width:20vw;
-        height:10vh;
-        margin-left:0%;
+        animation-play-state: paused;
       }
       .action-btn {
         background-color: transparent;
@@ -636,25 +591,6 @@ a:active {
         top:20%;
       }
 
-      .music-container.play img {
-        background-color: skyblue;
-        height:fit-content;
-        top:0%;
-        position:sticky;
-        z-index: 100;
-        height:12%;
-        width:12%;
-        left:0%;
-        margin-left:0%;
-      }
-      
-      .music-container.play {
-        margin-top: 26%;
-          left:0%;
-          margin-left:0%;
-          position:relative;
-
-      }
 
       #music-container {
         border-style:none;
@@ -662,8 +598,9 @@ a:active {
       .music-info {
         background-color: rgba(0, 0, 0, 0.5);
         position:absolute;
+        display: block;
         color:rgb(0, 0, 0);
-        top: 0;
+        top: 135%;
         left:2%;
         right:2%;
         width: 100%;
@@ -673,6 +610,11 @@ a:active {
         font-size: 2vh;
         transition:none;
         text-align: center;
+        font-family: 'coolveticaregular';
+        src: url('coolvetica.rg-regular-webfont.woff2') format('woff2'),
+            url('coolvetica.rg-regular-webfont.woff') format('woff'),
+            url('coolvetica.rg-regular-webfont.ttf') format('truetype'),
+            url('coolvetica.rg-regular-webfont.svg#coolveticaregular') format('svg');
       }
       
       .music-container.play .music-info {
@@ -692,6 +634,7 @@ a:active {
         margin: 10px 0;
         height: 4px;
         width: 100%;
+        margin-right:12%;
       }
 
       .gallery {
