@@ -88,11 +88,6 @@ html {
   top:2vh;
 }
 
-.music-container.play {
-    top:2vh;
-    transition-duration: 0.5s;
-}
-
 
 
 .navigation {
@@ -215,13 +210,33 @@ html {
     bottom:2%;
   }
 
-#myVideo {
-    position: absolute;
+  #myVideoa2 {
+    position: relative;
     display: block;
     right: 0%;
     left: 0%;
     height:auto;
-    width:auto;
+    width:100%;;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    top:0%;
+    z-index: -1;
+    opacity:1;
+  }
+
+#myVideo {
+    position: relative;
+    display: block;
+    right: 0%;
+    left: 0%;
+    height:auto;
+    width:100%;;
     margin-left: 0%;
     margin-right: 0%;
     margin-top: 0%;
@@ -622,7 +637,7 @@ align-items: center;
         url('coolvetica.rg-regular-webfont.ttf') format('truetype'),
         url('coolvetica.rg-regular-webfont.svg#coolveticaregular') format('svg');
     z-index:100;
-    margin-top:50%;
+    margin-top:60%;
     right:0%;
     left:25%;
     height:auto;
@@ -637,9 +652,58 @@ align-items: center;
     color:white;
 }
 
+.birds {
+    width:100%;
+    height:100%;
+    position: relative;
+    display: block;
+    margin-top: 10%;;
+}
+.bird1 {
+    width:15%;
+    height:60%;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:2%;
+    margin-right:2%;
+}
+
+.birdtext {
+    font-family: 'coolveticaregular';
+    font-size:12vw ;
+    text-align: center;
+}
+.birdtext1 {
+    font-family: 'coolveticaregular';
+    font-size:22vw ;
+    text-align: center;
+    margin-top:0%;
+}
+.artistsabout {
+    width:100%;
+    height:100%;
+    position: relative;
+    display: block;
+    margin-top: 10%;;
+}
+
+@media (max-width=1320px) {
+    .music-container {
+        border-style: none;
+    }
+    #music-container {
+        border-style: none;
+    }
+    .music-container2 {
+        border-style: none;
+    }
+}
+
 .noexpectations {
     width:90%;
-    height:70%;
+    height:auto;
     margin-top:10%;
     margin-right:20%;
     position: absolute;
@@ -817,11 +881,12 @@ g {
     top:40vh;
     bottom:0vh;
     animation: aboutman 5s 5s linear infinite;
+    animation-direction:alternate-reverse;
     overflow:hidden;
 }
 @keyframes aboutman {
     0% {
-        transform: translateX(-20vw);
+        transform: translateX(-90vw);
     }
     100% {
         transform: translateX(100vw);
