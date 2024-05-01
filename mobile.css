@@ -13,183 +13,6 @@ html {
     width:100%;
 }
 
-.music-container {
-  background-color: transparent;
-  border-radius: 15%;
-  border-style: solid;
-  border-color: #000000;
-  display: inline-flex;
-  flex-wrap: wrap;
-  height:24vh;
-  width:10vw;
-  left:2vw;
-  top:2vh;
-  position: absolute;
-  z-index: 9;
-  align-items: center;
-  justify-content: center;
-  margin-left: 0%;
-}
-
-.img-container {
-  position: relative;
-  display: block;
-  width: fit-content;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding:2%;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  margin-left: 1vw;
-  margin-right: 1vw;
-}
-
-.music-container2 {
-    background-color: transparent;
-    border-radius: 15%;
-    display: inline-flex;
-    flex-wrap: wrap;
-    height:70%;
-    width:70%;
-    position: relative;
-    margin: 100px 0;
-    z-index: 9;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15%;
-    border-style: solid;
-    border-color: #000000;
-  }
-
-.img-container img {
-
-
-  height: 12vh;
-  width: 12vh;
-  position: relative;
-  top: 0;
-  left: 0;
-    z-index: 0;
-  animation-play-state: paused;
-}
-
-.music-container.play .img-container img {
-  animation-play-state: running;
-  border-style: solid;
-  border-color: #000000;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 10;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 0%;
-  top:2vh;
-}
-
-.music-container.play {
-    top:2vh;
-    transition-duration: 0.5s;
-}
-
-
-
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-  z-index: 10;
-}
-
-.action-btn {
-  background-color: transparent;
-  border: 0;
-  color: #000000;
-  font-size: 2vh;
-  cursor: pointer;
-  padding: 20%;
-  margin: 0;
-  z-index: 10;
-}
-
-.action-btn.action-btn-big {
-  color: #000000;
-  font-size: 3vh;
-  z-index: 10;
-}
-
-.action-btn:focus {
-  outline: 0;
-  z-index: 10;
-}
-
-.music-info {
-  background-color: transparent;
-  position:absolute;
-  color:rgb(0, 0, 0);
-  top: 0;
-  left:90%;
-  width: 20vw;
-  padding: 1vh 1vw 1vh 1vw;
-  opacity: 0;
-  z-index: 0;
-  font-family: 'coolveticaregular';
-  src: url('coolvetica.rg-regular-webfont.woff2') format('woff2'),
-      url('coolvetica.rg-regular-webfont.woff') format('woff'),
-      url('coolvetica.rg-regular-webfont.ttf') format('truetype'),
-      url('coolvetica.rg-regular-webfont.svg#coolveticaregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-size: 3vh;
-  text-align: left;
-  margin:1vh 1vw 0vh 1vw;
-  z-index: 100;
-  mix-blend-mode: difference;
-}
-
-.music-container.play .music-info {
-  opacity: 1;
-  background-color: transparent;
-  color: rgb(0, 0, 0);
-  z-index: 100;
-  top:1vh;
-}
-
-.music-info h4 {
-  margin: 1vh 1vw 1vh 1vw;
-}
-
-.progress-container {
-  background: rgba(199, 199, 199, 0.63);
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 10px 0;
-  height: 4px;
-  width: 100%;
-}
-
-.progress {
-  background-color: rgb(255, 255, 255);
-  border-radius: 5px;
-  height: 100%;
-  width: 0%;
-  transition: width 0.1s linear;
-}
-
-.entire {
-    height:fit-content;
-    width:fit-content;
-    display:inline-flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    top:-7vh;
-    text-align: center;
-    left:8vw;
-}
-
 
 /*START OF GLOBAL*/
 
@@ -200,39 +23,28 @@ html {
     margin-top:25%;
     position: absolute;
     top:25%;
-    width: 100%;
+    width: 90%;
     height: 20%;
     background-color:transparent;
     z-index: 100;
 }
-#myVideo5 {
-    overflow: hidden;
-    width:2px;
-    height:2px;
-    position:absolute;
-    display: block;
-    opacity:0;
-    bottom:2%;
-  }
+
 
 #myVideo {
     position: absolute;
     display: block;
     right: 0%;
     left: 0%;
-    height:auto;
-    width:auto;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    padding-left: 0%;
-    padding-right: 0%;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    top:0%;
+    min-width: 100%;
+    top:0;
     z-index: -1;
-    opacity:1;
+    max-width: 100%;
+    max-width: 200%;
+    top:0;
+    bottom: 0;
+    z-index: 1;
+    padding: 0% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
   }
 
   #myVideo2 {
@@ -359,10 +171,12 @@ html {
     transition-duration: 0.5s;
 }
 .tab1home {
-    padding:2%;
+    padding:0%;
     margin:auto;
     margin-left:1%;
     margin-right:1%;
+    padding-left:2%;
+    padding-right:2%;
     background-color: transparent;
     border: solid white;
     color:rgb(255, 255, 255);
@@ -371,17 +185,15 @@ html {
     font-family: 'Times New Roman', Times, serif;
     transition-duration: 0.4s;
     -webkit-text-fill-color: #fff;
-    font-size: 1vw;
+    font-size: 4vw;
     text-align: center;
-    height:20%;
-    width:20%;
+    height:10%;
+    width:fit-content;
     display:inline-flex;
     position: relative;
-    justify-content: center;
-    align-items: center;
     mix-blend-mode: difference;
     z-index: 100;
-    right:0%;
+    left:0;
 }
 .tab1home:hover {
     background-color: white;
@@ -390,43 +202,44 @@ html {
     transition-duration: 0.5s;
 }
 .tabshome {
-    display: inline-flex;
-    width: 50%;
+    display: block;
+    width: 100%;
     position: absolute;
     background-color: transparent;
     color:rgb(255, 255, 255);
     height: 30%;
-    text-align: right;
-    justify-content:right;
-    top:0;
+    text-align: center;
+    justify-content:center;
+    top:2%;
     z-index: 7;
-    right:3%;
-    margin:auto;
+    right:0%;
+    left:0%;
+    margin:0;
     mix-blend-mode: difference;
 }
 
 
 .home2000 {
     width: 100%;
-    height:50%;
+    height:auto;
     justify-content: center;
     position: absolute;
     align-items: center;
-    display:block;
+    display:sticky;
     z-index: 5;
     mix-blend-mode: overlay;
-    top:0%;
+    top:50%;
 }
 .home20001 {
     width:100%;
     height:100%;
-    top:40%;
     justify-content: center;
     position: absolute;
     align-items: center;
     display:block;
     z-index: 5;
     mix-blend-mode: overlay;
+
 }
 
 
@@ -489,6 +302,445 @@ a:active {
 }
 
 /*END OF GLOBAL SITE*/
+
+/*START OF GLOBAL RESPONSIVE*/
+
+    .footer {
+      width: 100%;
+      top:0vh
+    }
+
+      #myVideo5 {
+        position: absolute;
+        display: block;
+        right: 0%;
+        left: 0;
+        height:auto;
+        top:0%;
+        width:auto;
+        max-width: 100%;   
+        z-index: 1;
+
+      }
+      #myVideo {
+        overflow: hidden;
+        width:2px;
+        height:2px;
+        position:absolute;
+        display: fixed;
+        opacity:0;
+        bottom:2%;
+      }
+    
+    
+
+
+    .tab1 {
+        text-align: center;
+        padding:3%;
+        background-color: transparent;
+        border-style: solid;
+        color:white;
+        border-color: rgb(255, 255, 255);
+        font-family: 'Times New Roman', Times, serif;
+        transition-duration: 0.4s;
+        font-size: 4vw;
+        height:fit-content;
+        width:fit-content;
+        display:inline-flex;
+        position: relative;
+            z-index: 100;
+        top:0%;
+        left:5vw;
+        right:5vw;
+    }
+    .tabs {
+        display: block;
+        width: 100%;
+        position: absolute;
+        background-color: transparent;
+        color:rgb(255, 255, 255);
+        height: fit-content;
+        text-align: center;
+        justify-content: space-between;
+        top:0%;
+        left:0%;
+        right:0%;
+        
+    }
+
+
+
+
+    .music-container {
+        background-color: transparent;
+        border-radius: 15%;
+        border-style: solid;
+        border-color: #000000;
+        display: block;
+        flex-wrap: wrap;
+        height:20%;
+        width:20%;
+        left:15%;
+        top:15%;
+        position: absolute;
+        z-index: 9;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0%;
+      }
+      
+      .img-container {
+        position: relative;
+        display: block;
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding:2%;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        margin-left: 1vw;
+        margin-right: 1vw;
+      }
+      
+      .music-container2 {
+          background-color: transparent;
+          border-radius: 15%;
+          display: inline-flex;
+          flex-wrap: wrap;
+          height:70%;
+          width:70%;
+          position: relative;
+          margin: 100px 0;
+          z-index: 9;
+          align-items: center;
+          justify-content: center;
+          border-radius: 15%;
+          border-style: solid;
+          border-color: #000000;
+        }
+      
+      .img-container img {
+      
+      
+        height: 12vh;
+        width: 12vh;
+        position: relative;
+        top: 0;
+        left: 0;
+          z-index: 0;
+        animation-play-state: paused;
+      }
+      
+      .music-container.play .img-container img {
+        animation-play-state: running;
+        border-style: solid;
+        border-color: #000000;
+        position: relative;
+        z-index: 10;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0%;
+        top:2vh;
+      }
+      
+      
+      .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        z-index: 10;
+      }
+      
+      .action-btn {
+        background-color: transparent;
+        border: 0;
+        color: #000000;
+        font-size: 2vw;
+        cursor: pointer;
+        padding: 20%;
+        margin: 0;
+        z-index: 10;
+      }
+      
+      .action-btn.action-btn-big {
+        color: #000000;
+        font-size: 2vw;
+        z-index: 10;
+      }
+      
+      .action-btn:focus {
+        outline: 0;
+        z-index: 10;
+      }
+      
+      .music-info {
+        background-color: transparent;
+        position:absolute;
+       display: inline-flex;
+        color:rgb(0, 0, 0);
+        top: 80%;
+        left:90%;
+        width: 80%;
+        padding: 1vh 1vw 1vh 1vw;
+        opacity: 0;
+        z-index: 0;
+        font-family: 'coolveticaregular';
+        src: url('coolvetica.rg-regular-webfont.woff2') format('woff2'),
+            url('coolvetica.rg-regular-webfont.woff') format('woff'),
+            url('coolvetica.rg-regular-webfont.ttf') format('truetype'),
+            url('coolvetica.rg-regular-webfont.svg#coolveticaregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        font-size: 3vh;
+        text-align: left;
+        z-index: 100;
+        mix-blend-mode: difference;
+        transition: none;
+      }
+      
+      .music-container.play .music-info {
+        opacity: 1;
+        background-color: transparent;
+        transition: none;
+      }
+      
+      .music-info h4 {
+        margin: 1vh 1vw 1vh 1vw;
+      }
+      
+      .progress-container {
+        background: rgba(199, 199, 199, 0.63);
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top:60%;
+        height: 6px;
+        width: 100%;
+      }
+      
+      .progress {
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        height: 100%;
+        width: 0%;
+        transition: width 0.1s linear;
+      }
+      
+      .entire {
+          height:fit-content;
+          width:fit-content;
+          display:inline-flex;
+          position: relative;
+          justify-content: center;
+          align-items: center;
+          top:-7vh;
+          text-align: center;
+          left:8vw;
+      }
+      
+      
+
+
+
+    .music-container {
+        background-color:transparent;
+        display:inline-flex;
+        width:100%;
+        height:30%;
+        border-radius: 0%;
+        left:0%;
+        position: relative;
+        z-index: 98;
+        margin-left: 0%;
+        margin-top: 30%;
+      }
+
+      .invertedstrip {
+        background-color:rgb(255, 255, 255);
+        display:inline-flex;
+        width:100%;
+        height:10%;
+        border-radius: 0%;
+        left:0%;
+        position: absolute;
+        z-index: 97;
+        margin-left: 0%;
+        margin-top: 29%;
+        mix-blend-mode: difference;
+      }
+  
+      
+      .img-container {
+        position: absolute;
+        display: inline-flex;
+        padding:2%;
+        left:0%;
+
+      }
+      
+      .music-container2 {
+          background-color: transparent;
+          display: inline-flex;
+          flex-wrap: wrap;
+          height:70%;
+          width:70%;
+          position: relative;
+          z-index: 10;
+          align-items: center;
+          justify-content: center;
+
+        }
+      
+      .img-container img {
+        height: 12vh;
+        width: 12vh;
+        position: relative;
+        top: 0;
+        left: 0;
+          z-index: 0;
+        animation-play-state: paused;
+      }
+      
+      .music-container.play .img-container img {
+        animation-play-state: running;
+        top:0%;
+        position: relative;
+        left:0%;
+        width:20vw;
+        height:10vh;
+        margin-left:0%;
+      }
+      .action-btn {
+        background-color: transparent;
+        border: 0;
+        color: #ffffff;
+        font-size: 2vh;
+        cursor: pointer;
+        padding: 40%;
+        margin: 0;
+        position:relative;
+      }
+      
+      .action-btn.action-btn-big {
+        color: #ffffff;
+        font-size: 3vh;
+      }
+      .navigation {
+        display: inline-flex;
+        position: relative;
+        z-index: 100;
+        left:5%;
+        top:20%;
+      }
+
+      .music-container.play img {
+        background-color: skyblue;
+        height:fit-content;
+        top:0%;
+        position:sticky;
+        z-index: 100;
+        height:12%;
+        width:12%;
+        left:0%;
+        margin-left:0%;
+      }
+      
+      .music-container.play {
+        margin-top: 26%;
+          left:0%;
+          margin-left:0%;
+          position:relative;
+
+      }
+
+      #music-container {
+        border-style:none;
+      }
+      .music-info {
+        background-color: rgba(0, 0, 0, 0.5);
+        position:absolute;
+        color:rgb(0, 0, 0);
+        top: 0;
+        left:2%;
+        right:2%;
+        width: 100%;
+        padding: 1vh 1vw 1vh 1vw;
+        opacity: 0;
+        z-index: 100;
+        font-size: 2vh;
+        transition:none;
+        text-align: center;
+      }
+      
+      .music-container.play .music-info {
+        opacity: 1;
+        background-color: transparent;
+      }
+      
+      .music-info h4 {
+        margin: 1vh 1vw 1vh 1vw;
+      }
+      
+      .progress-container {
+        background: #fff;
+        mix-blend-mode: difference;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px 0;
+        height: 4px;
+        width: 100%;
+      }
+
+      .gallery {
+        padding: 1rem;
+        display:grid;
+        grid-template-columns: repeat(10, 80vw);
+        grid-template-rows: 1fr;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        overflow: scroll;
+        width: 100%;
+        scroll-snap-type:both mandatory;
+        scroll-padding: 1rem;
+        top:90%;
+        z-index: 1;
+    }
+    
+    .active {
+        scroll-snap-type: unset;
+    }
+    
+    li {
+        scroll-snap-align: center;
+        display: inline-block;
+        border-radius: 3px;
+        font-size: 0;
+        z-index: 90;
+    }
+    
+    .cimages {
+         height:30%;
+         width:100%;
+         top:30%;
+         position: relative;
+         display: block;
+         z-index: 90;
+         mix-blend-mode: difference;
+    }
+    .gif2gif {
+        width:30%;
+        position: absolute;
+        height:40%;
+        right:3%;
+        top:30%;
+        z-index:100;
+        mix-blend-mode: exclusion;
+    }
+
+
 
 
 
@@ -1072,7 +1324,7 @@ p {
 
 .linksbottom {
     position:absolute;
-    display:block;
+    display:inline-flex;
     padding:0%;
     margin:0%;
     margin-bottom:5%;
@@ -1080,7 +1332,7 @@ p {
     height:10%;
     left:2%;
     Right:2%;
-    bottom:-20%;
+    bottom:10%;
     z-index: 100;
     mix-blend-mode: difference;
 }
@@ -1099,31 +1351,37 @@ p {
     bottom:-30%;
     z-index: 100;
     mix-blend-mode: difference;
+    flex-wrap: wrap;
 }
 .aclass {
     z-index: 100;
     text-align: center;
     color: aliceblue;
-    font-size: 1vw;
-    width:fit-content;
+    font-size: 3vw;
+    width:100%;
+    height:3%;
     display: inline-flex;
-    position: relative;
-    padding:3%;
+    position: absolute;
+    padding:5%;
+    top:35%;
     mix-blend-mode: difference;
     text-decoration: none;
     font-family: 'coolveticaregular';
+    text-align:center;
+    justify-content: center;
+
 }
 
 .aclass1 {
     z-index: 100;
-    width:fit-content;
+    width:100%;
     text-align: center;
     color: aliceblue;
-    font-size: 1vw;
+    font-size: 2vw;
     display: inline-flex;
     position: relative;
     margin-bottom:3%;
-    padding:3%;
+    padding:5%;
     mix-blend-mode: difference;
     text-decoration: none;
     font-family: 'coolveticaregular';
@@ -1133,45 +1391,45 @@ p {
     z-index: 100;
     text-align: center;
     color: aliceblue;
-    font-size: 1vw;
+    font-size: 2vw;
     display: inline-flex;
     position: relative;
     margin-bottom:3%;
-    padding:3%;
+    padding:5%;
     mix-blend-mode: difference;
     text-decoration: none;
     font-family: 'coolveticaregular';
-    width:fit-content;
+    width:100%;
 }
 
 .aclass3 {
     z-index: 100;
     text-align: center;
     color: aliceblue;
-    font-size: 1vw;
+    font-size: 2vw;
     display: inline-flex;
     position: relative;
     margin-bottom:3%;
-    padding:3%;
+    padding:5%;
     mix-blend-mode: difference;
     text-decoration: none;
     font-family: 'coolveticaregular';
-    width:fit-content;
+    width:100%;
 }
 
 .aclass4 {
     z-index: 100;
     text-align: center;
     color: aliceblue;
-    font-size: 1vw;
+    font-size: 2vw;
     display: inline-flex;
     position: relative;
     margin-bottom:3%;
-    padding:3%;
+    padding:4%;
     mix-blend-mode: difference;
     text-decoration: none;
     font-family: 'coolveticaregular';
-    width:fit-content;
+    width:100%;
 }
 .aclass:hover {
     mix-blend-mode: normal;
@@ -1199,4 +1457,57 @@ p {
     mix-blend-mode: normal;
     color: rgb(168, 168, 168);
     transition-duration: 0.5s;
+}
+
+
+
+
+@media screen and (max-width: 440px) {
+
+
+.back2 {
+    width:80%;
+    height:auto;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top:23vh;
+    margin-bottom:5vh;
+    display:flex;
+    flex-wrap: wrap;
+}
+.textinvert {
+    position: relative; 
+    z-index: 2; 
+    color: rgb(255, 255, 255); 
+    mix-blend-mode: difference; 
+    font-family: 'coolveticaregular';
+    src: url('coolvetica.rg-regular-webfont.woff2') format('woff2'),
+        url('coolvetica.rg-regular-webfont.woff') format('woff'),
+        url('coolvetica.rg-regular-webfont.ttf') format('truetype'),
+        url('coolvetica.rg-regular-webfont.svg#coolveticaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-size:larger;
+}
+
+
+.horizontal2 {
+    height:20vh;
+    width: auto;
+    left:-100vw;
+    margin:35vh;
+    position: absolute;
+    animation: horizontalstrip 20s linear infinite;
+    overflow:hidden;
+    overflow:-moz-hidden-unscrollable;
+
+}
+
+p {
+    justify-self: center;
+    text-align: center;
+    text-decoration-color: azure;
+    text-decoration:wavy;
+}   
 }

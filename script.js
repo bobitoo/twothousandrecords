@@ -11,6 +11,9 @@ const cover = document.getElementById('cover');
 const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
+
+
+
 // Song titles
 const songs = ['Afex Tuiiiin - Quinn Quinn', 'cALL mE mAYBE - xxXcLUbXxx', 'Drums of Liberation - Alezia', 'EDMkyoto - POWERTRIP', 'Ending and Begining - Quinn Quinn', 'BLOOD - POWERTRIP', 'FinalFantasyBitterSweet - Alezia', 'Force of Nature - Alezia', 'GO2DAMOON (intro) - NEWm7', 'GO2DAMOON - NEWm7', 'HIGH - vuseo', 'IN MY ROOM - NEWm7', 'JKIMM - NEWm7', 'NIGHTSpt2 - vuseo!!! 1.0', 'A Real Trappa - PRIMO', 'OVERDUE - NEWm7', 'rEALMFers - xxXcLUbXxx', 'THE STORY OF PRIMO [PROD. RED WING CAP] - PRIMO', 'VIRUS GONE WRONG - vuseo'];
 
