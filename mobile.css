@@ -1414,3 +1414,43 @@ p {
     transform: none;
     transition: none;
   }
+
+  button#play.action-btn {
+    background-color: transparent;
+    border: 0;
+    color: #ffffff;
+    font-size: 2vh;
+    cursor: pointer;
+    padding: 30%;
+    margin: 0;
+    position:relative;
+    z-index: 100;
+    transform: none;
+    transition: none;
+  }
+  button#play.action-btn.action-btn-big {
+    background-color: transparent;
+    border: 0;
+    color: #ffffff;
+    font-size: 2vh;
+    cursor: pointer;
+    padding: 30%;
+    margin: 0;
+    position:relative;
+    z-index: 100;
+    transform: none;
+    transition: none;
+  }
+  button#play.action-btn {
+    background-color: transparent;
+    border: 0;
+    color: #ffffff;
+    font-size: 2vh;
+    cursor: pointer;
+    padding: 30%;
+    margin: 0;
+    position:relative;
+    z-index: 100;
+    transform: none;
+    transition: none;
+  }
