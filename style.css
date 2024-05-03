@@ -188,6 +188,19 @@ html {
 
 /*START OF GLOBAL*/
 
+.comingsoon{
+    font-family: 'coolveticaregular';
+    display:block;
+    position: absolute;
+    font-size: 5vw;
+    color: white;
+    z-index: 100;
+    width: fit-content;
+    height: fit-content;
+    mix-blend-mode: difference;
+    top:2%;
+    right:10%;
+}
 .footer {
     display:block;
     justify-content: center;
@@ -199,6 +212,7 @@ html {
     height: 20%;
     background-color:transparent;
     z-index: 100;
+    mix-blend-mode: difference;
 }
 #myVideo5 {
     overflow: hidden;
@@ -236,7 +250,7 @@ html {
     right: 0%;
     left: 0%;
     height:auto;
-    width:100%;;
+    width:100%;
     margin-left: 0%;
     margin-right: 0%;
     margin-top: 0%;
@@ -248,6 +262,26 @@ html {
     top:0%;
     z-index: -1;
     opacity:1;
+  }
+
+  #myVideocoming {
+    position: absolute;
+    display: block;
+    right: 0%;
+    left: 0%;
+    width:100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    top:0%;
+    z-index: -1;
+    opacity:1;
+    mix-blend-mode: overlay;
   }
 
   #myVideo2 {
@@ -1262,7 +1296,7 @@ p {
 
 
 .linksbottom {
-    position:absolute;
+    position:relative;
     display:block;
     padding:0%;
     margin:0%;
@@ -1274,6 +1308,9 @@ p {
     bottom:-20%;
     z-index: 100;
     mix-blend-mode: difference;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .linksbottom1 {
     position:relative;
@@ -1402,6 +1439,7 @@ p {
     height:auto;
     margin-top:7%;
     mix-blend-mode:difference ;
+    
 }
 .aspire2 {
     position:relative;
@@ -1435,16 +1473,17 @@ p {
 }
 
 #aspirevid1 {
-    width:25%;
+    width:35%;
     height:auto;
     display:inline-flex;
     position: relative;
 }
 #aspirevid2 {
-    width:25%;
+    width:35%;
     height:auto;
     display:inline-flex;
     position: relative;
+    margin-top:20%;
 }
 
 .aspirediv {
@@ -1461,6 +1500,7 @@ p {
     height:50%;
     position:relative;
     display: inline-flex;
+    color:white;
 }
 .aspiretext2 {
     font-family: 'coolveticaregular';
@@ -1469,4 +1509,5 @@ p {
     height:50%;
     position:relative;
     display: inline-flex;
+    color:white;
 }
