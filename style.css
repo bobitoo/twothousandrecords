@@ -1441,6 +1441,16 @@ p {
     mix-blend-mode:difference ;
     
 }
+
+.aspirediv {
+    position:relative;
+    display: flex;
+    width:100%;
+    height:auto;
+    margin-top:7%;
+    mix-blend-mode:difference ;
+    
+}
 .aspire2 {
     position:relative;
     display: flex;
@@ -1485,6 +1495,23 @@ p {
     position: relative;
     margin-top:20%;
 }
+#aspirevid3 {
+    width:100%;
+    height:auto;
+    display:inline-flex;
+    position: relative;
+    margin-top:-28%;
+    mix-blend-mode: difference;
+    bottom:0;
+    margin-bottom:0;
+}
+#aspirevid4 {
+    width:100%;
+    height:auto;
+    display:inline-flex;
+    position: relative;
+    mix-blend-mode: difference;
+}
 
 .aspirediv {
     width:100%;
@@ -1496,8 +1523,11 @@ p {
 .aspiretext1 {
     font-family: 'coolveticaregular';
     font-size: 2vw;
-    width:50%;
+    width:fit-content;
     height:50%;
+    margin-top:10%;
+    margin-left:10%;
+    margin-right:20%;
     position:relative;
     display: inline-flex;
     color:white;
@@ -1505,9 +1535,55 @@ p {
 .aspiretext2 {
     font-family: 'coolveticaregular';
     font-size: 2vw;
-    width:50%;
+    width:fit-content;
     height:50%;
+    margin-top:10%;
+    margin-right:10%;
+    margin-left:20%;
     position:relative;
     display: inline-flex;
     color:white;
+}
+
+.aspiretext3 {
+    font-family: 'coolveticaregular';
+    font-size: 2vw;
+    width:fit-content;
+    height:50%;
+    margin-top:-80%;
+    margin-left:10%;
+    margin-right:20%;
+    position:relative;
+    display: block;
+    color:white;
+}
+.aspiretext4 {
+    font-family: 'coolveticaregular';
+    font-size: 2vw;
+    width:fit-content;
+    height:50%;
+    margin-top:5%;
+    margin-right:10%;
+    margin-left:20%;
+    position:relative;
+    display:block;
+    color:white;
+}
+a.colorask {
+    color:white;
+    right:0%;
+    display: flex;
+    position: relative;
+}
+
+
+.hor2real2 {
+    width:100%;
+    height:auto;
+    mix-blend-mode: difference;
+    display: flex;
+    position: relative;
+    z-index: 100;
+    margin-top:10%;
+    margin-top:0%;
 }
