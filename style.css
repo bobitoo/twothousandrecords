@@ -11,6 +11,7 @@ body {
 
 html {
     width:100%;
+    background-color: #000;
 }
 
 .music-container {
@@ -243,6 +244,25 @@ html {
     z-index: -1;
     opacity:1;
   }
+  #myVideoa3 {
+    position: relative;
+    display: flex;
+    right: 0%;
+    left: 0%;
+    height:40%;
+    min-width:100%;;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    top:0%;
+    z-index: -1;
+    opacity:1;
+  }
 
 #myVideo {
     position: relative;
@@ -327,7 +347,7 @@ html {
     z-index: -1;
     padding:0% 0% 0% 0%;
     margin: 0% 0% 0% 0%;
-    mix-blend-mode: color-dodge;
+    mix-blend-mode: ;
   }
 
   #myVideo32 {
@@ -760,6 +780,13 @@ align-items: center;
     display:inline-flex;
     color:white;
 }
+.askk { 
+    font-family: 'coolveticaregular';
+    color:white;
+    position:relative;
+    display: flex;
+    margin-left:200%;
+}
 
 .aboutfinal {
     font-family: 'coolveticaregular';
@@ -830,7 +857,6 @@ align-items: center;
     height:10%;
     position: relative;
     display: flex;
-    margin-top: 10%;
     mix-blend-mode:hard-light;
     left:10%;
     right:10%;
@@ -1326,7 +1352,40 @@ p {
     Right:2%;
     bottom:-30%;
     z-index: 100;
+    margin-top:10%;
     mix-blend-mode: difference;
+}
+.form {
+    display:block;
+    position: relative;
+    z-index: 100;
+    font-family: 'coolveticaregular';
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    mix-blend-mode: difference;
+    width:fit-content;
+}
+.form:hover {
+    mix-blend-mode: normal;
+}
+.form:focus{
+    mix-blend-mode: normal;
+}
+
+.form1 {
+    display:block;
+    position: relative;
+    z-index: 100;
+    font-family: 'coolveticaregular';
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    margin-left:100%;
+    margin-top:55%;
+    
+
 }
 .aclass {
     z-index: 100;
@@ -1512,6 +1571,16 @@ p {
     position: relative;
     mix-blend-mode: difference;
 }
+#aspirevid5 {
+    width:100%;
+    height:auto;
+    display:inline-flex;
+    position: relative;
+    mix-blend-mode: normal;
+    margin-top:0%;
+    top:0%;
+    z-index: 10;
+}
 
 .aspirediv {
     width:100%;
@@ -1559,7 +1628,7 @@ p {
 }
 .aspiretext4 {
     font-family: 'coolveticaregular';
-    font-size: 2vw;
+    font-size: 5vw;
     width:fit-content;
     height:50%;
     margin-top:5%;
@@ -1569,9 +1638,45 @@ p {
     display:block;
     color:white;
 }
+
+.aspiretext5 {
+    font-family: 'coolveticaregular';
+    font-size: 2vw;
+    width:fit-content;
+    height:50%;
+    margin-left:10%;
+    margin-right:20%;
+    position:relative;
+    display: block;
+    color:white;
+    z-index: 100;
+}
+.aspiretext6 {
+    font-family: 'coolveticaregular';
+    font-size: 5vw;
+    width:fit-content;
+    height:50%;
+    margin-top:0%;
+    margin-right:10%;
+    margin-left:20%;
+    position:relative;
+    display:block;
+    color:white;
+    z-index: 100;
+}
+.aspiretext4:hover {
+    mix-blend-mode: difference;
+}
 a.colorask {
     color:white;
-    right:0%;
+    margin-right:0%;
+    display: flex;
+    position: relative;
+}
+.colorask {
+    color:white;
+    margin-right:0%;
+    right: 0%;
     display: flex;
     position: relative;
 }
@@ -1584,6 +1689,31 @@ a.colorask {
     display: flex;
     position: relative;
     z-index: 100;
-    margin-top:10%;
+    top:10%;
     margin-top:0%;
+}
+.hor2real5 {
+    width:100%;
+    height:auto;
+    mix-blend-mode: normal;
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    top:0%;
+    margin-top:0%;
+}
+.hor2real {
+    width:100%;
+    height:auto;
+    display: flex;
+    position: relative;
+    z-index: 100;
+    top:10%;
+    margin-top:0%;
+    mix-blend-mode: exclusion;
+}
+.albumart {
+    width:100%;
+    position:relative;
+    display:block;
 }

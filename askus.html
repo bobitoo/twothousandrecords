@@ -1,0 +1,121 @@
+<?php
+if(isset($_POST['submit'])){
+    $to = "twothousandww@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", I will contact you shortly!";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
+
+<html>
+    <head>
+        <title>TWOTHOUSAND RECORDS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="man.png">
+		<link rel="stylesheet" media="only screen and (min-device-width: 501px)"  href="style.css">
+        <link rel="stylesheet" media="only screen and (max-device-width: 500px)" href="mobile.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+  />
+	
+    </head>
+    <body>
+<div class="aboutbackgrounds">
+	  <video autoplay muted loop id="myVideo">
+		<source src="mainbackground3.mp4"  type="video/mp4">
+	  </video>
+	  <video autoplay muted loop id="myVideoa2">
+		<source src="mainbackground3.mp4"  type="video/mp4">
+	  </video>
+	  <video autoplay muted loop id="myVideoa3">
+		<source src="mainbackground3.mp4"  type="video/mp4">
+	  </video>
+	  
+</div>
+		
+
+<div id="footer">
+	<div class="tabshome">
+		<a href="about.html" class="tab1home">ABOUT</a>
+		<a href="artists.html" class="tab1home">ARTISTS</a>
+		<a href="aspirations.html" class="tab1home">ASPIRATIONS</a>
+		<a href="askus.html" class="tab1home">ASKUS</a>
+			
+		
+		
+	</div>
+
+<div class="invertedstrip"></div>
+
+	<div class="music-container" id="music-container">
+	  <div class="music-info">
+		<h4 id="title"></h4>
+		<div class="progress-container" id="progress-container">
+		  <div class="progress" id="progress"></div>
+		</div>
+	  </div>
+
+	  <audio src="music/NIGHTSpt2 - vuseo!!! 1.0.wav" id="audio"></audio>
+
+	<div class="img-container">
+		<img src="images/vuseo1.png" alt="music-cover" id="cover" />
+	  </div>
+
+	  
+	  <div class="navigation">
+		<button id="prev" class="action-btn">
+		  <i class="fas fa-backward"></i>
+		</button>
+		<button id="play" class="action-btn action-btn-big">
+		  <i class="fas fa-play"></i>
+		</button>
+		<button id="next" class="action-btn">
+		  <i class="fas fa-forward"></i>
+		</button>
+	  </div>
+	</div>
+
+	
+</div>
+
+
+        <img class="aboutman" src="man.png">
+
+<div class="form">
+		<form class="form1" method="post">
+			First Name: <input type="text" name="first_name"><br>
+			Last Name: <input type="text" name="last_name"><br>
+			Email: <input type="text" name="email"><br>
+			Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+			<input type="submit" name="submit" value="Submit">
+			</form>
+			
+		<div class="askk">
+			ASK US ANYTHING!!!!!!
+		</div>
+		</div>
+
+
+			
+<div class="linksbottom1">
+	<a class="aclass">©2024 TWOTHOUSAND RECORDS</a><a class="aclass1" href="toofar.html">PRIVACY POLICY</a><a class="aclass2" href="toofar.html">TERMS OF USE</a><a class="aclass3" href="toofar.html">COOKIES POLICY</a><a class="aclass4" href="toofar.html">DO NOT SELL OR SHARE MY PERSONAL INFORMATION</a>
+	</div>
+        
+<script src="script.js"></script>
+    </body>
+
+</html> 
