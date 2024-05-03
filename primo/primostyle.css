@@ -134,12 +134,13 @@ html {
     font-family: 'Old English Text MT';
     color:white;
     top:70%;
-    bottom:30%;
-    position:absolute;
+    bottom:60%;
+    position:relative;
     display:flex; 
     z-index: 1;
     left:16%;
     opacity:1;
+    font-size: x-large;
 }
 
 .comingsoon {
@@ -557,3 +558,188 @@ h3 {
 .shop1:hover {
     opacity:1;
 }
+.linksbottom {
+    position:relative;
+    display:block;
+    padding:0%;
+    margin:0%;
+    margin-bottom:5%;
+    width:100%;
+    height:10%;
+    left:2%;
+    Right:2%;
+    bottom:-20%;
+    z-index: 100;
+    mix-blend-mode: exclusion;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.linksbottom1 {
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:0%;
+    margin:0 auto;
+    width:90%;
+    height:auto;
+    left:2%;
+    Right:2%;
+    bottom:-280%;
+    margin-bottom:0%;
+    z-index: 100;
+    mix-blend-mode: difference;
+}
+.linksbottom12 {
+    position:absolute;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:0%;
+    top: 32%;
+    left:20%;
+    margin-top: 150%;
+    z-index: 100;
+    mix-blend-mode: difference;
+}
+
+.aclass {
+    z-index: 100;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+    width:fit-content;
+    display: inline-flex;
+    position: relative;
+    padding:3%;
+    mix-blend-mode: difference;
+    text-decoration: none;
+    font-family: 'coolveticaregular';
+}
+
+.aclass1 {
+    z-index: 100;
+    width:fit-content;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+    display: inline-flex;
+    position: relative;
+    margin-bottom:3%;
+    padding:3%;
+    mix-blend-mode: difference;
+    text-decoration: none;
+    font-family: 'coolveticaregular';
+}
+
+.aclass2 {
+    z-index: 100;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+    display: inline-flex;
+    position: relative;
+    margin-bottom:3%;
+    padding:3%;
+    mix-blend-mode: difference;
+    text-decoration: none;
+    font-family: 'coolveticaregular';
+    width:fit-content;
+}
+
+.aclass3 {
+    z-index: 100;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+    display: inline-flex;
+    position: relative;
+    margin-bottom:3%;
+    padding:3%;
+    mix-blend-mode: difference;
+    text-decoration: none;
+    font-family: 'coolveticaregular';
+    width:fit-content;
+}
+.text12 {
+    font-family: 'incredible_soupsregular';
+    width:90%;
+    font-size: 3vw;
+    color:white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: .1vw;
+}
+.text123 {
+    font-family: 'incredible_soupsregular';
+    width:90%;
+    font-size: 1vw;
+    display: inline-flex;
+    position: relative;
+}
+.music {
+    width:100%;
+    display:block;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: -5;
+}
+.text1232 {
+    font-family: 'incredible_soupsregular';
+    width:90%;
+    font-size: 1vw;
+    display: inline-flex;
+    position: relative;
+}
+
+.aclass4 {
+    z-index: 100;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1vw;
+    display: inline-flex;
+    position: relative;
+    margin-bottom:3%;
+    padding:3%;
+    mix-blend-mode: difference;
+    text-decoration: none;
+    font-family: 'coolveticaregular';
+    width:fit-content;
+}
+.audio1 {
+    background-color: transparent;
+    background: none;
+    
+
+}
+.aclass:hover {
+    mix-blend-mode: normal;
+    color: rgb(168, 168, 168);
+    transition-duration: 0.5s;
+}
+.aclass1:hover {
+    mix-blend-mode: normal;
+    color: rgb(168, 168, 168);
+    transition-duration: 0.5s;
+}
+.aclass2:hover {
+    mix-blend-mode: normal;
+    color: rgb(168, 168, 168);
+    transition-duration: 0.5s;
+}
+
+.aclass3:hover {
+    mix-blend-mode: normal;
+    color: rgb(168, 168, 168);
+    transition-duration: 0.5s;
+}
+
+.aclass4:hover {
+    mix-blend-mode: normal;
+    color: rgb(168, 168, 168);
+    transition-duration: 0.5s;
+}
+
