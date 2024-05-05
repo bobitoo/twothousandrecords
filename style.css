@@ -432,7 +432,10 @@ html {
 .tab1 {
     text-align: right;
     right:2%;
-    padding:1%;
+    padding-top:.5%;
+    padding-bottom:.5%;
+    padding-right:3%;
+    padding-left:3%;
     margin:auto;
     margin-left:2%;
     margin-right:2%;
@@ -657,6 +660,7 @@ body {
     width: 40%;
     height: 100%;
     z-index: 10;
+    top:20%;
 }
 
 .about1 {
@@ -785,7 +789,39 @@ align-items: center;
     color:white;
     position:relative;
     display: flex;
-    margin-left:200%;
+    left:20%;
+    font-size: x-large;
+    padding-right: 0%;
+    margin-right:0%;
+    mix-blend-mode: difference;
+}
+
+.askk2 { 
+    font-family: 'coolveticaregular';
+    color:white;
+    position:relative;
+    display: flex;
+    left:20%;
+    font-size: x-large;
+    padding-right: 0%;
+    margin-right:0%;
+    mix-blend-mode: difference;
+    font-size: 5vw;
+    top:10%;
+}
+
+.askk3 { 
+    font-family: 'coolveticaregular';
+    color:white;
+    position:relative;
+    display: flex;
+    left:20%;
+    font-size: x-large;
+    padding-right: 0%;
+    margin-right:0%;
+    mix-blend-mode: difference;
+    font-size: 3vw;
+    top:10%;
 }
 
 .aboutfinal {
@@ -1047,7 +1083,7 @@ g {
     position: relative;
     display: flex;
     z-index: 1;
-    margin-top:5%;
+    margin-top:0%;
     transition-duration: 0.5s;
 }
 .welcome:hover{
@@ -1365,7 +1401,7 @@ p {
     align-items: center;
     color:white;
     mix-blend-mode: difference;
-    width:fit-content;
+    margin-top:10%;
 }
 .form:hover {
     mix-blend-mode: normal;
@@ -1382,9 +1418,10 @@ p {
     background-color: transparent;
     justify-content: center;
     align-items: center;
-    margin-left:100%;
-    margin-top:55%;
-    
+    width:fit-content;
+    height: fit-content;
+    top:20%;
+    left:20%;
 
 }
 .aclass {
