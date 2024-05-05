@@ -659,7 +659,7 @@ body {
     height: fit-content;
     width: 40%;
     height: 100%;
-    z-index: 10;
+    z-index: 100;
     top:20%;
 }
 
