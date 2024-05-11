@@ -1609,14 +1609,16 @@ p {
     mix-blend-mode: difference;
 }
 #aspirevid5 {
-    width:100%;
-    height:auto;
-    display:inline-flex;
-    position: relative;
-    mix-blend-mode: normal;
-    margin-top:0%;
-    top:0%;
-    z-index: 10;
+
+    display:none;
+    position: none;
+
+}
+#aspirevid6 {
+
+    display:none;
+    position: none;
+
 }
 
 .aspirediv {

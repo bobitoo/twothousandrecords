@@ -22,7 +22,7 @@ html {
     align-items:center;
     margin-top:25%;
     position: absolute;
-    top:25%;
+    top:0%;
     width: 90%;
     height: 20%;
     background-color:transparent;
@@ -30,21 +30,10 @@ html {
 }
 
 
+
 #myVideo {
     position: absolute;
-    display: block;
-    right: 0%;
-    left: 0%;
-    min-width: 100%;
-    top:0;
-    z-index: -1;
-    max-width: 100%;
-    max-width: 200%;
-    top:0;
-    bottom: 0;
-    z-index: 1;
-    padding: 0% 0% 0% 0%;
-    margin: 0% 0% 0% 0%;
+    display: none; 
   }
 
   #myVideo2 {
@@ -61,10 +50,23 @@ html {
     margin: 0% 0% 0% 0%;
     mix-blend-mode: difference;
   }
-  
+  #myVideo31 {
+    position: relative;
+    display: flex;
+    right: 0%;
+    left: 0%;
+    min-width: 100%;
+    z-index: 1;
+    max-width: 100%;
+    top:0%;
+    z-index: -1;
+    padding:0% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
+    mix-blend-mode: difference;
+  }
   #myVideo3 {
-    position: absolute;
-    display: block;
+    position: relative;
+    display: flex;
     right: 0%;
     left: 0%;
     min-width: 100%;
@@ -76,20 +78,62 @@ html {
     margin: 0% 0% 0% 0%;
     mix-blend-mode: difference;
   }
-
+  #myVideo4 {
+    position: relative;
+    display: flex;
+    right: 0%;
+    left: 0%;
+    min-width: 100%;
+    z-index: 1;
+    max-width: 100%;
+    top:100%;
+    z-index: -1;
+    padding:0% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
+    margin-bottom:0%;
+    margin-top:0%;
+    mix-blend-mode: difference;
+  }
+  #myVideo5 {
+    position: relative;
+    display: flex;
+    right: 0%;
+    left: 0%;
+    min-width: 100%;
+    z-index: 1;
+    max-width: 100%;
+    top:0%;
+    margin-top:0%;
+    z-index: -1;
+    padding:0% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
+    margin-top:0%;
+    mix-blend-mode: difference;
+  }
 
 .aboutbackgrounds {
     width:100%;
-    height:425%;
+    height:fit-content;
     display: block;
     position: absolute;
     left:0;
     right:0;
-    top:0;
+    top:0%;
     margin: 0% 0% 0% 0%;
+    margin-top:0%;
     padding: 0% 0% 0% 0%;
 }
-
+.aboutbackgrounds2 {
+    width:100%;
+    display: block;
+    position: absolute;
+    left:0;
+    right:0;
+    top:100%;
+    margin: 0% 0% 0% 0%;
+    margin-top:100%;
+    padding: 0% 0% 0% 0%;
+}
 
 
 .gif2gif {
@@ -128,21 +172,22 @@ html {
 .tabs {
     display: inline-flex;
     width: 100%;
-    position: relative;
+    position: absolute;
     background-color: transparent;
     color:rgb(255, 255, 255);
-    height: 20%;
+    height:7%;
     text-align: center;
     justify-content:center;
-    top:0;
+    align-items: center;
+    top:0%;
     z-index: 7;
     mix-blend-mode: difference;
 
 }
 .tab1 {
     padding:2%;
-    margin-left:.1%;
-    margin-right:.1%;
+    margin-left:2%; 
+    margin-right:2%; 
     padding-left:2%;
     padding-right:2%;
     background-color: transparent;
@@ -159,9 +204,10 @@ html {
     width:fit-content;
     display:inline-flex;
     position: relative;
+    justify-self: center;
     mix-blend-mode: difference;
     z-index: 100;
-    left:0;
+    top:0;
 
 }
 .tab1:hover {
@@ -307,69 +353,8 @@ a:active {
 
     .footer {
       width: 100%;
-      top:0vh
+      top:0%;
     }
-
-      #myVideo5 {
-        position: absolute;
-        display: block;
-        right: 0%;
-        left: 0;
-        height:auto;
-        top:0%;
-        width:auto;
-        max-width: 100%;   
-        z-index: 1;
-        opacity:1;
-
-      }
-      #myVideo {
-        overflow: hidden;
-        width:2px;
-        height:2px;
-        position:absolute;
-        display: fixed;
-        opacity:0;
-        bottom:2%;
-      }
-    
-    
-
-
-    .tab1 {
-        text-align: center;
-        padding:3%;
-        background-color: transparent;
-        border-style: solid;
-        color:white;
-        border-color: rgb(255, 255, 255);
-        font-family: 'Times New Roman', Times, serif;
-        transition-duration: 0.4s;
-        font-size: 4vw;
-        height:fit-content;
-        width:fit-content;
-        display:inline-flex;
-        position: relative;
-            z-index: 100;
-        top:0%;
-        left:5vw;
-        right:5vw;
-    }
-    .tabs {
-        display: block;
-        width: 100%;
-        position: absolute;
-        background-color: transparent;
-        color:rgb(255, 255, 255);
-        height: fit-content;
-        text-align: center;
-        justify-content: space-between;
-        top:0%;
-        left:0%;
-        right:0%;
-        
-    }
-
 
       .img-container {
         position: relative;
@@ -652,11 +637,12 @@ body {
 
 .about2000 {
     display: block;
-    position: fixed;
+    position: absolute;
     z-index: 100;
-    max-width: 100%;
-    max-height: 60%;
-    left:45%;
+    width: 50%;
+    left:25%;
+    right:25%;
+    top:0%;
 
 }
 .about20000 {
@@ -664,7 +650,7 @@ body {
     position: absolute;
     padding:1%;
     margin:1%;
-    margin-top:40%;
+    margin-top:30%;
     width: fit-content;
     height: fit-content;
     width: 100%;
@@ -956,16 +942,21 @@ p {
 .artists1 {
     position:absolute;
     display: block;
-    margin-top:0%;
+    margin-top:8%;
     z-index: 100;
     top:30%;
-    left:10%;
-    right:10%;
-    width:80%;
-    height:80%;
+    width:100%;
+    height:200%;
+    animation: artists1 10s linear infinite;
+    transition-duration:2s;
+    mix-blend-mode: exclusion;
+    fill:white;
 }
 
 .artists1:hover {
+
+}
+.artists1:active {
     animation: artists1 10s linear infinite;
     transition-duration:2s;
     mix-blend-mode: exclusion;
@@ -976,77 +967,48 @@ p {
     0% {
         background-color: rgb(0, 0, 0);
     }
-    5% {
+    10% {
         background-color: rgb(0, 0, 255);
     }
-    10% {
+    20% {
         background-color: rgba(0, 255, 13, 0.788);
     }
-    15% {
-        background-color: rgb(247, 0, 0);
-    }
-    20% {
-        background-color: rgb(215, 253, 0);
-    }
-    25% {
-        background-color: rgb(255, 0, 255);
-    }
     30% {
-        background-color: rgb(0, 255, 242);
-    }
-    35% {
-        background-color: rgba(255, 153, 0, 0.788);
+        background-color: rgb(247, 0, 0);
     }
     40% {
-        background-color: rgb(247, 0, 0);
-    }
-    45% {
         background-color: rgb(215, 253, 0);
     }
     50% {
-        background-color: rgb(0, 0, 255);
-    }
-    55% {
-        background-color: rgba(0, 255, 13, 0.788);
-    }
-    60% {
-        background-color: rgb(247, 0, 0);
-    }
-    65% {
-        background-color: rgb(215, 253, 0);
-    }
-    70% {
         background-color: rgb(255, 0, 255);
     }
-    75% {
+    60% {
         background-color: rgb(0, 255, 242);
     }
-    80% {
+    70% {
         background-color: rgba(255, 153, 0, 0.788);
     }
-    85% {
+    80% {
         background-color: rgb(247, 0, 0);
     }
     90% {
         background-color: rgb(215, 253, 0);
     }
-    95% {
-        background-color: rgb(0, 255, 21);
-    }
     100% {
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 255);
     }
 }
 
 .artists2 {
     position:relative;
-    margin-top:52%;
+    margin-top:152%;
     margin-left: 5%;
     margin-right: 20%;
     padding:2%;
     z-index: 100;
-    fill:#ffa6a3;
-    stroke: #000;
+    fill:transparent;
+    stroke: #ff00dd;
+    stroke-width: .5vw;
 }
 
 .artists2:hover {
@@ -1065,8 +1027,9 @@ p {
     margin-right: 5%;
     padding:2%;
     z-index: 100;
-    fill:#002fff;
-    stroke:#000000;
+    fill:transparent;
+    stroke:#001d9e;
+    stroke-width: .5vw;
 }
 
 .artists3:hover {
@@ -1086,8 +1049,9 @@ p {
     margin-right: 20%;
     padding:2%;
     z-index: 100;
-    fill:#00f000;
-    stroke:#000000;
+    fill:transparent;
+    stroke:#00d300;
+    stroke-width: .5vw;
 }
 
 .artists4:hover {
@@ -1106,9 +1070,9 @@ p {
     margin-right: 5%;
     padding:2%;
     z-index: 100;
-    fill:#b700ff;
-    stroke:#000000;
-    stroke-width: .17vw;
+    fill:transparent;
+    stroke:#6f009b;
+    stroke-width: .27vw;
 }
 
 .artists5:hover {
@@ -1126,9 +1090,9 @@ p {
     margin-right: 20%;
     padding:2%;
     z-index: 100;
-    fill:#ff12df;
-    stroke:#000000;
-    stroke-width: .17vw;
+    fill:transparent;
+    stroke:#008fb3;
+    stroke-width: .87vw;
 }
 
 .artists6:hover {
@@ -1147,9 +1111,9 @@ p {
     margin-right: 5%;
     padding:2%;
     z-index: 100;
-    fill:#e90000;
-    stroke:#000000;
-    stroke-width: .17vw;
+    fill:transparent;
+    stroke:#990000;
+    stroke-width: .67vw;
 }
 
 .artists7:hover {
@@ -1168,9 +1132,9 @@ p {
     margin-right: 20%;
     padding:2%;
     z-index: 100;
-    fill:#003881;
-    stroke:#000000;
-    stroke-width: .17vw;
+    fill:transparent;
+    stroke:#fbff00;
+    stroke-width: .57vw;
 }
 
 .artists8:hover {
@@ -1199,7 +1163,7 @@ p {
     mix-blend-mode: difference;
 }
 .linksbottom1 {
-    position:relative;
+    position:absolute;
     display:block;
     justify-content: center;
     align-items: center;
@@ -1210,7 +1174,7 @@ p {
     height:5%;
     left:2%;
     Right:2%;
-    bottom:-30%;
+    bottom:0%;
     z-index: 100;
     mix-blend-mode: difference;
     flex-wrap: wrap;
@@ -1223,14 +1187,12 @@ p {
     width:100%;
     height:3%;
     display: inline-flex;
-    position: absolute;
+    position: relative;
     padding:5%;
-    top:35%;
     mix-blend-mode: difference;
     text-decoration: none;
     font-family: 'coolveticaregular';
-    text-align:center;
-    justify-content: center;
+    margin-top:210%;
 
 }
 
@@ -1379,6 +1341,16 @@ p {
 
 
 
+@font-face {
+    font-family: 'coolveticaregular';
+    src: url('coolvetica.rg-regular-webfont.woff2') format('woff2'),
+        url('coolvetica.rg-regular-webfont.woff') format('woff'),
+        url('coolvetica.rg-regular-webfont.ttf') format('truetype'),
+        url('coolvetica.rg-regular-webfont.svg#coolveticaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
 
@@ -1454,3 +1426,262 @@ p {
     transform: none;
     transition: none;
   }
+
+
+  .aspire {
+    position:relative;
+    display: flex;
+    width:100%;
+    height:auto;
+    margin-top:7%;
+    mix-blend-mode:difference ;
+    
+}
+
+.aspirediv {
+    position:relative;
+    display: flex;
+    width:100%;
+    height:auto;
+    margin-top:7%;
+    mix-blend-mode:difference ;
+    
+}
+.aspire2 {
+    position:relative;
+    display: flex;
+    width:80%;
+    height:auto;
+    left:10%;
+    right: 10%;
+    top:100%;
+    margin-top:100%;
+    mix-blend-mode:difference ;
+}
+
+.aspirebody{
+    position:relative;
+    display: block;
+    width:100%;
+    height:40%;
+    margin-top:76%;
+    z-index: 100;
+
+}
+
+.forgif {
+    fill:white;
+    position:relative;
+    display: flex;
+    width:100%;
+    left:0%;
+    right:0%;
+    z-index: 100;
+}
+
+#aspirevid1 {
+    width:35%;
+    height:auto;
+    display:inline-flex;
+    position: relative;
+}
+#aspirevid2 {
+    width:35%;
+    height:auto;
+    display:inline-flex;
+    position: relative;
+    margin-top:20%;
+}
+#aspirevid3 {
+    width:100%;
+    height:auto;
+    display: block;
+    position: absolute;
+    margin-top:0%;
+    max-width: 100%;
+    mix-blend-mode: difference;
+    margin-bottom:0%;
+}
+#aspirevid4 {
+    width:100%;
+    height:auto;
+    display: block;
+    position: absolute;
+    mix-blend-mode: difference;
+}
+#aspirevid5 {
+    width:100%;
+    height:auto;
+    display: block;
+    position: absolute;
+    mix-blend-mode: normal;
+    margin-top:0%;
+    top:80%;
+    z-index: -1;
+}
+#aspirevid7 {
+    width:100%;
+    height:auto;
+    display: block;
+    position: absolute;
+    mix-blend-mode: normal;
+    margin-top:0%;
+    top:100%;
+    z-index: -1;
+}
+#aspirevid8 {
+    width:100%;
+    height:auto;
+    display: block;
+    position: absolute;
+    mix-blend-mode: normal;
+    margin-top:0%;
+    top:120%;
+    z-index: -1;
+}
+#aspirevid6 {
+    width:100%;
+    height:auto;
+    display: block;
+    position: absolute;
+    mix-blend-mode: normal;
+    margin-top:0%;
+    top:140%;
+    z-index: -1;
+}
+
+.aspirediv {
+    width:100%;
+    height:100%;
+    position:relative;
+    display: block;
+}
+
+.aspiretext1 {
+    font-family:'coolveticaregular';
+    font-size: 5vw;
+    width:fit-content;
+    height:fit-content;
+    margin-top:10%;
+    margin-left:10%;
+    margin-right:20%;
+    position:relative;
+    display: inline-flex;
+    color:white;
+}
+.aspiretext2 {
+    font-family: 'coolveticaregular';
+    font-size: 5vw;
+    width:fit-content;
+    height:fit-content;
+    margin-top:10%;
+    margin-right:10%;
+    margin-left:20%;
+    position:relative;
+    display: inline-flex;
+    color:white;
+}
+
+.aspiretext3 {
+    font-family: 'coolveticaregular';
+    font-size: 5vw;
+    width:fit-content;
+    height:fit-content;
+    margin-top:-80%;
+    margin-left:10%;
+    margin-right:20%;
+    position:relative;
+    display: inline-flex;
+    color:white;
+}
+.aspiretext4 {
+    font-family: 'coolveticaregular';
+    font-size: 5vw;
+    width:fit-content;
+    height:50%;
+    margin-top:5%;
+    margin-right:10%;
+    margin-left:20%;
+    position:relative;
+    display:block;
+    color:white;
+}
+
+.aspiretext5 {
+    font-family: 'coolveticaregular';
+    font-size: 2vw;
+    width:fit-content;
+    height:50%;
+    margin-left:10%;
+    margin-right:20%;
+    position:relative;
+    display: block;
+    color:white;
+    z-index: 100;
+}
+.aspiretext6 {
+    font-family: 'coolveticaregular';
+    font-size: 5vw;
+    width:fit-content;
+    height:50%;
+    margin-top:0%;
+    margin-right:10%;
+    margin-left:20%;
+    position:relative;
+    display:block;
+    color:white;
+    z-index: 100;
+}
+.aspiretext4:hover {
+    mix-blend-mode: difference;
+}
+a.colorask {
+    color:white;
+    margin-right:0%;
+    display: flex;
+    position: relative;
+}
+.colorask {
+    color:white;
+    margin-right:0%;
+    right: 0%;
+    display: flex;
+    position: relative;
+}
+
+
+.hor2real2 {
+    width:100%;
+    height:auto;
+    mix-blend-mode: difference;
+    display: flex;
+    position: relative;
+    z-index: 100;
+    top:10%;
+    margin-top:0%;
+}
+.hor2real5 {
+    width:100%;
+    height:auto;
+    mix-blend-mode: normal;
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    top:0%;
+    margin-top:0%;
+}
+.hor2real {
+    width:100%;
+    height:auto;
+    display: flex;
+    position: relative;
+    z-index: 100;
+    top:10%;
+    margin-top:0%;
+    mix-blend-mode: exclusion;
+}
+.albumart {
+    width:100%;
+    position:relative;
+    display:block;
+}
