@@ -72,11 +72,10 @@ html {
     min-width: 100%;
     z-index: 1;
     max-width: 100%;
-    top:35%;
-    z-index: -1;
+    z-index: 2;
     padding:0% 0% 0% 0%;
     margin: 0% 0% 0% 0%;
-    margin-top:-57%;
+    margin-top:-84%;
     mix-blend-mode: difference;
   }
   #myVideoa3 {
@@ -88,10 +87,9 @@ html {
     z-index: 1;
     max-width: 100%;
     top:35%;
-    z-index: -1;
+    z-index: -3;
     padding:0% 0% 0% 0%;
     margin: 0% 0% 0% 0%;
-    mix-blend-mode: difference;
   } 
   #myVideoa4 {
     position: relative;
@@ -143,6 +141,71 @@ html {
     margin-top:0%;
     mix-blend-mode: difference;
   }
+  #myVideo51 {
+    position: absolute;
+    display: flex;
+    right: 0%;
+    left: 0%;
+    min-width: 100%;
+    z-index: 1;
+    max-width: 100%;
+    z-index: -1;
+    padding:0% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
+    margin-top:0%;
+  }
+
+  #myVideo512 {
+    position: absolute;
+    display: flex;
+    right: 0%;
+    left: 0%;
+    min-width: 100%;
+    z-index: 1;
+    max-width: 100%;
+    z-index: -1;
+    padding:0% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
+    margin-top:20%;
+    mix-blend-mode: difference;
+  }
+
+  #myVideo513 {
+    position: absolute;
+    display: flex;
+    right: 0%;
+    left: 0%;
+    min-width: 100%;
+    z-index: 1;
+    max-width: 100%;
+    z-index: -1;
+    padding:0% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
+    margin-top:177.5%;
+    mix-blend-mode: difference;
+  }
+
+  .artistgif {
+    position: absolute;
+    display: block;
+    width:100%;
+    max-width: 100%;
+    height: auto;
+    z-index: 0;
+    top:0%;
+  }
+  .artistgif2 {
+    position: absolute;
+    display: block;
+    width:100%;
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+    margin-top:216%;
+    mix-blend-mode: difference;
+  }
+
+
 
 .aboutbackgrounds {
     width:100%;
@@ -414,15 +477,12 @@ a:link {
         url('coolvetica.rg-regular-webfont.ttf') format('truetype'),
         url('coolvetica.rg-regular-webfont.svg#coolveticaregular') format('svg');
 }
+
 a:visited {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    mix-blend-mode: difference;
 }
-a:active {
-    text-decoration: none;
-    color: blue;
-    font-style: oblique;
-}
+
 .container:hover {
     opacity:.80;
     transition-duration: 0.5s;
@@ -1069,6 +1129,20 @@ g {
     animation-direction:alternate-reverse;
     overflow:hidden;
 }
+.aboutman2 {
+    display: inline-flex;
+    position: relative;
+    height: 20vh;
+    width: auto;
+    left: -30vw;
+    margin-top:5%;
+    margin-bottom:3%;
+    animation: aboutman 5s 1s linear infinite;
+    animation-direction:alternate-reverse;
+    overflow:hidden;
+    mix-blend-mode: overlay;
+    z-index: 1;
+}
 @keyframes aboutman {
     0% {
         transform: translateX(-30vw);
@@ -1096,7 +1170,7 @@ p {
     z-index: 100;
     top:40%;
     width:100%;
-    height:210%;
+    height:fit-content;
     padding-top: 5%;
     animation: artists1 10s linear infinite;
     transition-duration:2s;
@@ -1149,19 +1223,19 @@ p {
 
 .artists2 {
     position:relative;
-    margin-top:152%;
+    margin-top:227%;
     margin-left: 5%;
     margin-right: 20%;
     padding:2%;
     z-index: 100;
     fill:transparent;
-    stroke: #ff00dd;
+    stroke: #ffffff;
     stroke-width: .5vw;
 }
 
 .artists2:hover {
     transition-duration: 1.5s;
-    fill:#ffffff;
+    fill:#ff00dd;
     background-color:rgb(255, 194, 194);
     padding:1%;
     cursor: pointer;
@@ -1176,7 +1250,7 @@ p {
     padding:2%;
     z-index: 100;
     fill:transparent;
-    stroke:#001d9e;
+    stroke:#ffffff;
     stroke-width: .5vw;
 }
 
@@ -1186,7 +1260,7 @@ p {
     background-color:blue;
     cursor: pointer;
     mix-blend-mode: difference;
-    fill:#ffffff;
+    fill:#001d9e;
 
 }
 
@@ -1198,7 +1272,7 @@ p {
     padding:2%;
     z-index: 100;
     fill:transparent;
-    stroke:#00d300;
+    stroke:#ffffff;
     stroke-width: .5vw;
 }
 
@@ -1208,7 +1282,7 @@ p {
     background-color:rgb(0, 255, 85);
     cursor: pointer;
     mix-blend-mode: difference;
-    fill:#ffffff;
+    fill:#00d300;
 }
 
 .artists5 {
@@ -1219,8 +1293,8 @@ p {
     padding:2%;
     z-index: 100;
     fill:transparent;
-    stroke:#6f009b;
-    stroke-width: .27vw;
+    stroke:#ffffff;
+    stroke-width: .47vw;
 }
 
 .artists5:hover {
@@ -1229,7 +1303,7 @@ p {
     background-color:rgb(241, 245, 36);
     cursor: pointer;
     mix-blend-mode: difference;
-    fill:#ffffff
+    fill:#6f009b;
 }
 .artists6 {
     position:relative;
@@ -1239,7 +1313,7 @@ p {
     padding:2%;
     z-index: 100;
     fill:transparent;
-    stroke:#008fb3;
+    stroke:#ffffff;
     stroke-width: .87vw;
 }
 
@@ -1248,7 +1322,7 @@ p {
     transition-duration: 1.5s;
     background-color:rgb(255, 28, 160);
     cursor: pointer;
-    fill:#ffffff;
+    fill:#008fb3;
     mix-blend-mode: difference;
 }
 
@@ -1260,8 +1334,8 @@ p {
     padding:2%;
     z-index: 100;
     fill:transparent;
-    stroke:#990000;
-    stroke-width: .67vw;
+    stroke:#ffffff;
+    stroke-width: .97vw;
 }
 
 .artists7:hover {
@@ -1270,7 +1344,7 @@ p {
     background-color:rgb(180, 0, 0);
     cursor: pointer;
     mix-blend-mode: difference;
-    fill:#ffffff;
+    fill:#990000;
 }
 
 .artists8 {
@@ -1278,11 +1352,11 @@ p {
     margin-top:7%;
     margin-left: 5%;
     margin-right: 20%;
-    margin-bottom:37%;
+    margin-bottom:0%;
     padding:2%;
     z-index: 100;
     fill:transparent;
-    stroke:#fbff00;
+    stroke:#ffffff;
     stroke-width: .57vw;
 }
 
@@ -1292,7 +1366,7 @@ p {
     background-color:rgb(255, 102, 0);
     cursor: pointer;
     mix-blend-mode: difference;
-    fill:white;
+    fill:#fbff00;
 }
 
 
@@ -1336,7 +1410,7 @@ p {
     align-items: center;
     text-align: center;
     padding:0%;
-    margin-top:50%;
+    margin-top:0%;
     bottom:10%;
     width:90%;
     height:25%;
@@ -1348,6 +1422,7 @@ p {
     color: #fff;
 
 }
+
 .linksbottom3 {
     position:relative;
     display:flex;
@@ -1432,7 +1507,36 @@ p {
     margin-top:0%;
     mix-blend-mode: normal;
 }
-
+.aclasstemp1 {
+    z-index: 100;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-size: 3vw;
+    width:100%;
+    height:3%;
+    display: inline-flex;
+    position: relative;
+    padding:5%;
+    text-decoration: none;
+    font-family: 'coolveticaregular';
+    margin-top:0%;
+    mix-blend-mode: normal;
+}
+.aclasstemp2 {
+    z-index: 100;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-size: 3vw;
+    width:100%;
+    height:3%;
+    display: inline-flex;
+    position: relative;
+    padding:5%;
+    text-decoration: none;
+    font-family: 'coolveticaregular';
+    margin-bottom:15%;
+    mix-blend-mode: normal;
+}
 
 .aclassask {
     z-index: 100;
@@ -1495,6 +1599,8 @@ p {
     margin-top:0%;
 
 }
+
+
 .aclasshome {
     z-index: 100;
     text-align: center;
