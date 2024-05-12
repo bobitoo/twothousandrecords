@@ -78,35 +78,35 @@ html {
     margin-top:-84%;
     mix-blend-mode: difference;
   }
-  #myVideoa3 {
+  #myVideoask {
+    position: none;
+    display: none;
+  }
+  #myVideoa6 {
     position: relative;
-    display: flex;
+    display: block;
     right: 0%;
     left: 0%;
     min-width: 100%;
     z-index: 1;
     max-width: 100%;
-    top:35%;
+    width: 100%;
+    height:auto;
+    top:0%;
     z-index: -3;
     padding:0% 0% 0% 0%;
     margin: 0% 0% 0% 0%;
   } 
   #myVideoa4 {
-    position: relative;
-    display: flex;
-    right: 0%;
-    left: 0%;
-    min-width: 100%;
-    z-index: 1;
-    max-width: 100%;
-    top:35%;
-    z-index: -1;
-    padding:0% 0% 0% 0%;
-    margin: 0% 0% 0% 0%;
-    margin-top:0%;
-    mix-blend-mode: difference;
+    position: none;
+    display: none;
   }
   #myVideoa2 {
+    position: none;
+    display: none;
+
+  }
+  #myVideoa3 {
     position: none;
     display: none;
 
@@ -480,6 +480,7 @@ a:link {
 
 a:visited {
     text-decoration: none;
+    color:inherit;
     mix-blend-mode: difference;
 }
 
@@ -565,8 +566,8 @@ a:visited {
         display: inline-flex;
         position: relative;
         z-index: 100;
-        left:180%;
-        top:10%;
+        left:230%;
+        top:15%;
       }
 
       .entire {
@@ -664,7 +665,7 @@ a:visited {
         position:absolute;
         display: block;
         color:rgb(255, 255, 255);
-        top: 60%;
+        margin-top: 140%;
         left:2%;
         right:2%;
         width: 90vw;
@@ -800,29 +801,81 @@ body {
     height: 70%;
     z-index: 10;
 }
+.about20001 {
+    display: inline-flex;
+    position: relative;
+    z-index: 100;
+    max-width: 50%;
+    max-height: 40%;
+    left:25%;
+
+}
+.about200001 {
+    display: inline-flex;
+    position: relative;
+    padding:0%;
+    margin:0%;
+    width: fit-content;
+    height: fit-content;
+    width: 30%;
+    height: 100%;
+    z-index: 100;
+    top:30%;
+}
+
+
+.about20000aclass {
+    display: block;
+    position: absolute;
+    width:100%;
+    height:100%;
+    margin-top:20%;
+    margin-right:35%;
+}
 
 .about2000imgclass {
     display: block;
     position: absolute;
-    z-index: 100;
-    width: 50%;
-    left:25%;
-    right:25%;
-    top:57%;
+    width: 60%;
+    height:auto;
+    
+}
 
-}
-.about20000aclass {
-    display: inline-flex;
+.about20000aclass2 {
+    display: block;
     position: absolute;
-    padding:1%;
-    margin:1%;
-    margin-top:30%;
-    width: fit-content;
-    height: fit-content;
-    width: 100%;
-    height: 70%;
-    z-index: 10;
+    width:100%;
+    height:100%;
+    margin-top:45%;
+    margin-right:0%;
+    margin-left:40%;
 }
+
+.about2000imgclass2 {
+    display: block;
+    position: absolute;
+    width: 60%;
+    height:auto;
+    
+}
+.about20000aclass3 {
+    display: block;
+    position: absolute;
+    width:40%;
+    height:100%;
+    top:95%;
+    margin-top:11%;
+    left:29%;
+}
+
+.about2000imgclass3 {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height:auto;
+    
+}
+
 
 .about1 {
     background-color: transparent;
@@ -1110,7 +1163,7 @@ g {
     position: absolute;
     z-index: 1;
     bottom:1px;
-    top:42%;
+    top:52%;
     transition-duration: 0.5s;
 }
 .welcome:hover{
@@ -1170,7 +1223,7 @@ p {
     z-index: 100;
     top:40%;
     width:100%;
-    height:fit-content;
+    height:26%;
     padding-top: 5%;
     animation: artists1 10s linear infinite;
     transition-duration:2s;
@@ -1403,6 +1456,25 @@ p {
     flex-wrap: wrap;
     color: white;
 }
+.linksbottom11 {
+    position:relative;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:0%;
+    margin:0 auto;
+    width:90%;
+    height:5%;
+    left:2%;
+    Right:2%;
+    bottom:0%;
+    margin-top:20%;
+    z-index: 100;
+    mix-blend-mode: difference;
+    flex-wrap: wrap;
+    color: white;
+}
 .linksbottom2 {
     position:relative;
     display:flex;
@@ -1419,7 +1491,7 @@ p {
     z-index: 100;
     mix-blend-mode: normal;
     flex-wrap: wrap;
-    color: #fff;
+    color: black;
 
 }
 
@@ -1452,8 +1524,8 @@ p {
     align-items: center;
     color:white;
     mix-blend-mode: difference;
-    margin-top:10%;
-    margin-bottom:28%;
+    margin-top:150%;
+    margin-bottom:15%;
 }
 .form:hover {
     mix-blend-mode: normal;
@@ -1550,7 +1622,7 @@ p {
     padding:5%;
     text-decoration: none;
     font-family: 'coolveticaregular';
-    margin-top:0%;
+    margin-top:10%;
 
 }
 
@@ -1576,7 +1648,7 @@ p {
     font-size: 2vw;
     display: inline-flex;
     position: relative;
-    margin-bottom:19%;
+    margin-bottom:10%;
     padding:5%;
     mix-blend-mode: difference;
     text-decoration: none;
@@ -1605,7 +1677,7 @@ p {
     z-index: 100;
     text-align: center;
     color:rgb(255, 255, 255);
-    font-size: 3vw;
+    font-size: 4vw;
     width:100%;
     height:3%;
     display: inline-flex;
@@ -1613,7 +1685,7 @@ p {
     padding:5%;
     text-decoration: none;
     font-family: 'coolveticaregular';
-    margin-top:0%;
+    margin-top:150%;
 
 }
 
@@ -1626,9 +1698,10 @@ p {
     position: relative;
     margin-bottom:3%;
     padding:5%;
-    mix-blend-mode: difference;
+    mix-blend-mode: normal;
     text-decoration: none;
     font-family: 'coolveticaregular';
+    color:rgb(255, 255, 255);
 }
 
 .aclass2 {
@@ -1639,10 +1712,11 @@ p {
     position: relative;
     margin-bottom:3%;
     padding:5%;
-    mix-blend-mode: difference;
+    mix-blend-mode: normal;
     text-decoration: none;
     font-family: 'coolveticaregular';
     width:100%;
+    color:rgb(255, 255, 255);
 }
 
 .aclass3 {
@@ -1653,10 +1727,11 @@ p {
     position: relative;
     margin-bottom:5%;
     padding:5%;
-    mix-blend-mode: difference;
+    mix-blend-mode: normal;
     text-decoration: none;
     font-family: 'coolveticaregular';
     width:100%;
+    color:rgb(255, 255, 255);
 }
 
 .aclass4 {
@@ -1667,10 +1742,11 @@ p {
     position: relative;
     margin-bottom:5%;
     padding:5%;
-    mix-blend-mode: difference;
+    mix-blend-mode: normal;
     text-decoration: none;
     font-family: 'coolveticaregular';
     width:100%;
+    color:rgb(255, 255, 255);
 }
 .aclass:hover {
     mix-blend-mode: normal;
@@ -1789,19 +1865,10 @@ p {
   .action-btn.action-btn-big:focus {
     color: #ffffff;
     font-size: 3vh;
-    z-index: 100;
     transform: none;
     transition: none;
   }
-  .navigation:focus {
-    display: inline-flex;
-    position: relative;
-    z-index: 100;
-    left:180%;
-    top:10%;
-    transform: none;
-    transition: none;
-  }
+
 
   button#play.action-btn {
     background-color: transparent;
@@ -2149,12 +2216,14 @@ a.colorask:active {
     font-family: 'coolveticaregular';
     color:white;
     position:absolute;
+    text-align: center;
     display: flex;
-    left:20%;
-    font-size: x-large;
+    left:0%;
+    font-size:15vw;
     padding-right: 0%;
     margin-right:0%;
-    top:43%;
+    top:47%;
+    width:100%;
     mix-blend-mode: difference;
 }
 
@@ -2163,13 +2232,14 @@ a.colorask:active {
     color:white;
     position:relative;
     display: flex;
-    left:10%;
     font-size: x-large;
+    width:fit-content;
     padding-right: 0%;
     margin-right:0%;
     mix-blend-mode: difference;
     font-size: 25vw;
     margin-top:45%;
+    margin-left:5%;
 }
 
 .askk3 { 
@@ -2177,14 +2247,29 @@ a.colorask:active {
     color:white;
     position:relative;
     display: flex;
-    left:10%;
     font-size: x-large;
+    width:fit-content;
     padding-right: 0%;
     margin-right:0%;
     mix-blend-mode: difference;
     font-size: 7vw;
     top:10%;
-    margin-bottom:30%;
+    margin-bottom:40%;
+    margin-left:5%;
+}
+.askk4 { 
+    font-family: 'coolveticaregular';
+    color:white;
+    position:relative;
+    display: flex;
+    font-size: x-large;
+    width:fit-content;
+    padding-right: 0%;
+    mix-blend-mode: difference;
+    font-size: 25vw;
+    margin-top:0%;
+    margin-left:2%;
+    margin-right:5%;
 }
 
 .aboutfinal {
@@ -2233,6 +2318,7 @@ a.colorask:active {
     text-align: center;
     mix-blend-mode: difference;
     color:white;
+    bottom:5%
 }
 .birdtext1 {
     font-family: 'coolveticaregular';
@@ -2247,7 +2333,7 @@ a.colorask:active {
     height:100%;
     position: relative;
     display: block;
-    margin-top: 20%;;
+    margin-top: 15%;
     mix-blend-mode: difference;
 }
 
@@ -2260,13 +2346,14 @@ a.colorask:active {
     left:10%;
     right:10%;
     margin-bottom:20%;
-    margin-top:10%;
+    margin-top:22%;
     justify-content: center;
     align-items: center;
+    animation: artists2 10s linear infinite;
 }
 
 .aboutgif:hover {
-    animation: artists1 10s linear infinite;
+    animation: artists2 10s linear infinite;
     transition-duration:2s;
     mix-blend-mode: exclusion;
     fill:white;
@@ -2294,12 +2381,50 @@ a.colorask:active {
     position:relative;
     text-align: center;
     display: flex;
-    left:5%;
     max-width: 90%;
     font-size: x-large;
     padding-right: 0%;
     margin-right:0%;
     font-size: 4vw;
-    top:10%;
+    top:2%;
     margin-top:60%;
+}
+
+@keyframes artists2 {
+    0% {
+        background-color: rgb(0, 0, 0);
+    }
+    10% {
+        background-color: rgb(0, 0, 255);
+    }
+    20% {
+        background-color: rgba(0, 0, 0, 0.788);
+    }
+    30% {
+        background-color: rgba(0, 255, 13, 0.788);
+    }
+    40% {
+        background-color: rgba(0, 0, 0, 0.788);
+    }
+    50% {
+        background-color: rgb(247, 0, 0);
+    }
+    60% {
+        background-color: rgba(0, 0, 0, 0.788);
+    }
+    70% {
+        background-color: rgb(215, 253, 0);
+    }
+    80% {
+        background-color: rgba(0, 0, 0, 0.788);
+    }
+    90% {
+        background-color: rgb(255, 0, 255);
+    }
+    95% {
+        background-color: rgb(95, 0, 95);
+    }
+    100% {
+        background-color: rgb(0, 0, 0);
+    }
 }
