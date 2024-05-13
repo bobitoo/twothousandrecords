@@ -64,8 +64,6 @@ html {
   }
 
 .img-container img {
-
-
   height: 12vh;
   width: 12vh;
   position: relative;
@@ -75,18 +73,7 @@ html {
   animation-play-state: paused;
 }
 
-.music-container.play .img-container img {
-  animation-play-state: running;
-  border-style: solid;
-  border-color: #000000;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 10;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 0%;
-}
+
 
 
 
@@ -115,10 +102,6 @@ html {
   z-index: 10;
 }
 
-.action-btn:focus {
-  outline: 0;
-  z-index: 10;
-}
 
 .music-info {
   background-color: transparent;
@@ -144,6 +127,7 @@ html {
   z-index: 97;
   mix-blend-mode: difference;
 }
+
 
 .music-container.play .music-info {
   opacity: 1;
@@ -175,15 +159,16 @@ html {
 }
 
 .entire {
-    height:fit-content;
-    width:fit-content;
-    display:inline-flex;
-    position: relative;
+    height:20%;
+    width:20%;
+    display:block;
+    position: absolute;
     justify-content: center;
     align-items: center;
-    top:-7vh;
+    top:1%;
     text-align: center;
-    left:8vw;
+    left:0%;
+    z-index: 100;
 }
 
 
