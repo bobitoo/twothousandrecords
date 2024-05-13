@@ -7,16 +7,32 @@
 
 }
 
+@font-face {
+    font-family: 'Digitalix';
+    src: url('Digitalix.woff2') format('woff2'),
+        url('Digitalix.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
 * {
     box-sizing: border-box;
+}
+marquee {
+    z-index: 100;
 }
 
 .header {
     width: fit-content;
     height:fit-content;
-    background-color: pink;
-    border: 2vw dotted aliceblue;
+    background-color: transparent;
+    border: 1.1vw dotted rgb(255, 255, 255);
     margin: 5% auto;
+    margin-top:0%;
+
+    padding:1%;
     text-align: center;
     justify-content: space-between;
     align-items: center;
@@ -25,12 +41,73 @@
     font-size: large;
     font-family: 'incredible_soupsregular';
     border-radius: 100%;
-    top:20%;
+    
+    z-index: 100;
 }
+.header2 {
+    width: fit-content;
+    height:fit-content;
+    background-color: transparent;
+    margin: 5% auto;
+    padding:1%;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    display:block;
+    font-size: large;
+    font-family: 'incredible_soupsregular';
+    border-radius: 100%;
+    top:10%;
+    margin-top:1%;
+    z-index: 100;
+}
+.tab2 {
+    font-size: large;
+    font-family: 'incredible_soupsregular';
+    color:rgb(0, 0, 0);
+    font-size: 1vw;
+    margin-top:5%;
+    margin-left:5%;
+    margin-right:5%;
+    text-decoration: none;
+    transition-duration: 2s;
+    position: relative;
+    display: inline-flex;
+    padding:1%;
+    z-index: 100;
+
+}
+.tab2:hover {
+    color:rgb(240, 125, 255);
+    transition-duration: 0.5s;
+    text-shadow: 25%;
+    box-shadow: 25%;
+    outline-style: solid;
+    outline-color: rgb(255, 255, 255);
+}
+
+
+.a2 {
+    width:40%;
+    padding:5%;
+    z-index: 100;
+    transition-duration: 0.6s;
+}
+.a2:hover {
+    background-color: rgb(240, 125, 255);
+    fill:white;
+    transition-duration: 0.6;
+    border-radius: 50%;
+    padding:2%;
+    opacity: 0.5;
+}
+
 
 .bounce {
     font-family: 'incredible_soupsregular';
     color:black;
+    z-index: 100;
 }
 .tab {
     font-size: large;
@@ -45,33 +122,118 @@
     position: relative;
     display: inline-flex;
     padding:1%;
+    z-index: 100;
 
 }
 .tab:hover {
-    color:rgb(104, 0, 97);
+    color:hwb(313 51% 0%);
     transition-duration: 0.5s;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.05vw;
     text-shadow: 25%;
     box-shadow: 25%;
-    outline-style: solid;
-    outline-color: rgb(255, 255, 255);
+
+}
+
+.shop1 {
+    font-family: 'Digitalix';
+    width:fit-content;
+    color: rgb(0, 0, 0);
+    font-size:7vw;
+    display:block;
+    position: relative;
+    z-index: 10;
+    left:13%;
+    padding:1%;
+    margin-top:10%;
+    animation:shopmerch 5s linear infinite;
+    mix-blend-mode: overlay;
+}
+
+@keyframes shopmerch {
+    0% {
+        background-color: transparent;
+    }
+    25% {
+        background-color: hwb(313 51% 0%);
+    }
+    50% {
+        background-color: hwb(313 0% 0%);
+    }
+    75% {
+        background-color: hwb(313 51% 0%);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+.shop2 {
+    font-family: 'Digitalix';
+    width:100%;
+    display:block;
+    position: relative;
+    height:50%;
+    z-index: 100;
+}
+.shop2p1 {
+    font-family: 'Digitalix';
+    width:50%;
+    display:inline-flex;
+    position: relative;
+    height:50%;
+    z-index: 100;
+}
+.shop2p1:hover {
+    opacity: 0.6;
+    transition-duration: 0.9s;
+}
+
+.shop2p2{
+    font-family: 'Digitalix';
+    width:50%;
+    display:inline-flex;
+    position: relative;
+    height:50%;
+    z-index: 100;
+}
+
+.shop2p2:hover {
+    opacity: 0.6;
+    transition-duration: 0.9s;
+}
+.shop3 {
+    font-family: 'Digitalix';
+    width:fit-content;
+    color: rgb(255, 255, 255);
+    font-size:1vw;
+    display:block;
+    position: relative;
+    z-index: 10;
+    left:13%;
+    padding:1%;
+    margin-top:10%;
+    animation:shopmerch 5s linear infinite;
+    mix-blend-mode: overlay;
 }
 
 .a {
     width:80%;
     padding:5%;
+    z-index: 100;
 }
 
 .alezia1{
     position: relative;
     display: block;
     margin-left:5%;
+    z-index: 100;
 }
 
 .alexia2 {
     width:80%;
     height:80vh;
     background-color: transparent;
-    border:1vw dashed;
     border-color: pink;
     display: grid;
     grid-template-rows: 100%;
@@ -81,6 +243,7 @@
     justify-content: center;
     margin:0 auto;
     margin-bottom: 2%;
+    z-index: 100;
 }
 
 .alexia3 {
@@ -96,26 +259,43 @@
     align-items:center;
     justify-content: center;
     margin:0 auto;
+    z-index: 100;
 
+}
+
+.worknow {
+    stroke:black;
+    stroke-width: 2vw;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1vw;
 }
 
 .image1 {
     width:90%;
     height:auto;
     position:relative;
+    display: grid;
     left:3%;
     right:3%;
     display:flex;
     margin-right:0%;
     justify-content: right;
     text-align: end;
-
+    z-index: 100;
+    stroke:black;
+    stroke-width: 2vw;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1vw;
 }
 #image1 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
+    stroke:black;
+    stroke-width: 2vw;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1vw;
 }
 #text1 {
     grid-column-start: 2;
@@ -160,6 +340,7 @@ h1 {
     padding:3%;
     font-size: xxx-large;
     right:0%;
+    z-index: 100;
 }
 h2 {
     position:relative;
@@ -173,6 +354,7 @@ h2 {
     top:15%;
     font-size: xx-large;
     right:0%;
+    z-index: 100;
 }
 
 h3 {
@@ -187,6 +369,7 @@ h3 {
     padding-bottom:3%;
     margin:0 auto;
     font-size: xx-large;
+    z-index: 100;
 }
 
 .linksbottom {
@@ -195,16 +378,16 @@ h3 {
     padding:0%;
     margin:0%;
     margin-bottom:5%;
+    margin-top:25%;
     width:100%;
     height:10%;
-    left:2%;
-    Right:2%;
     bottom:-20%;
     z-index: 100;
     mix-blend-mode: exclusion;
     justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: 100;
 }
 .linksbottom1 {
     position:relative;
@@ -220,8 +403,9 @@ h3 {
     Right:2%;
     bottom:-30%;
     z-index: 100;
-    margin-top:10%;
+    margin-top:30%;
     mix-blend-mode: difference;
+    z-index: 100;
 }
 
 .aclass {
@@ -236,6 +420,7 @@ h3 {
     mix-blend-mode: difference;
     text-decoration: none;
     font-family: 'coolveticaregular';
+    z-index: 100;
 }
 
 .aclass1 {
@@ -251,8 +436,15 @@ h3 {
     mix-blend-mode: difference;
     text-decoration: none;
     font-family: 'coolveticaregular';
+    z-index: 100;
 }
 
+#Layer_2:hover {
+    fill:white;
+}
+#Layer_1-2:hover {
+    fill:white;
+}
 .aclass2 {
     z-index: 100;
     text-align: center;
@@ -266,6 +458,7 @@ h3 {
     text-decoration: none;
     font-family: 'coolveticaregular';
     width:fit-content;
+    z-index: 100;
 }
 
 .aclass3 {
@@ -281,14 +474,15 @@ h3 {
     text-decoration: none;
     font-family: 'coolveticaregular';
     width:fit-content;
+    z-index: 100;
 }
 .text12 {
-    font-family: 'incredible_soupsregular';
-    width:90%;
-    font-size: 3vw;
-    color:white;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: .1vw;
+    font-family: 'Digitalix';
+    width:70%;
+    font-size: 2vw;
+    color:rgb(0, 0, 0);
+    z-index: 100;
+    margin-bottom:3%;
 }
 .text123 {
     font-family: 'incredible_soupsregular';
@@ -296,6 +490,7 @@ h3 {
     font-size: 1vw;
     display: inline-flex;
     position: relative;
+    z-index: 100;
 }
 .music {
     width:100%;
@@ -304,6 +499,7 @@ h3 {
     left:0;
     top:0;
     z-index: -5;
+    z-index: 1;
 }
 .text1232 {
     font-family: 'incredible_soupsregular';
@@ -311,6 +507,7 @@ h3 {
     font-size: 1vw;
     display: inline-flex;
     position: relative;
+    z-index: 100;
 }
 
 .aclass4 {
@@ -326,11 +523,12 @@ h3 {
     text-decoration: none;
     font-family: 'coolveticaregular';
     width:fit-content;
+    z-index: 100;
 }
 .audio1 {
     background-color: transparent;
     background: none;
-    
+    z-index: 100;
 
 }
 .aclass:hover {
@@ -361,3 +559,11 @@ h3 {
     transition-duration: 0.5s;
 }
 
+#backpic {
+    position:absolute;
+    display: block;
+    width:100%;
+    left:0;
+    top:0;
+    z-index: 1;
+}
